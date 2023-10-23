@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.uiLabel3 = new Sunny.UI.UILabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnExit = new Sunny.UI.UIButton();
-            this.btnLogin = new Sunny.UI.UIButton();
             this.txtpassword = new Sunny.UI.UITextBox();
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.txtuser = new Sunny.UI.UITextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btnsignup = new Sunny.UI.UIButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnExit = new Sunny.UI.UIButton();
+            this.btnLogin = new Sunny.UI.UIButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // uiLabel3
             // 
-            this.uiLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.uiLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.uiLabel3.Location = new System.Drawing.Point(336, 77);
             this.uiLabel3.Name = "uiLabel3";
@@ -57,23 +57,11 @@
             this.uiLabel3.Text = "Welcome";
             this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.Screenshot_2023_09_27_212121;
-            this.pictureBox1.Location = new System.Drawing.Point(341, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.uiLabel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(816, 107);
@@ -81,56 +69,19 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.Controls.Add(this.txtpassword);
             this.panel2.Controls.Add(this.uiLabel2);
             this.panel2.Controls.Add(this.uiLabel1);
             this.panel2.Controls.Add(this.txtuser);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 107);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(816, 472);
             this.panel2.TabIndex = 10;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnsignup);
-            this.panel3.Controls.Add(this.btnExit);
-            this.panel3.Controls.Add(this.btnLogin);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 432);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(816, 147);
-            this.panel3.TabIndex = 15;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnExit.Location = new System.Drawing.Point(290, 109);
-            this.btnExit.MinimumSize = new System.Drawing.Size(1, 1);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(192, 35);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
-            this.btnExit.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnLogin.Location = new System.Drawing.Point(290, 3);
-            this.btnLogin.MinimumSize = new System.Drawing.Size(1, 1);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(192, 35);
-            this.btnLogin.TabIndex = 8;
-            this.btnLogin.Text = "Log in";
-            this.btnLogin.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            // 
             // txtpassword
             // 
-            this.txtpassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtpassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpassword.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txtpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -147,7 +98,7 @@
             // 
             // uiLabel2
             // 
-            this.uiLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.uiLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.uiLabel2.Location = new System.Drawing.Point(135, 209);
             this.uiLabel2.Name = "uiLabel2";
@@ -158,7 +109,7 @@
             // 
             // uiLabel1
             // 
-            this.uiLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.uiLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.uiLabel1.Location = new System.Drawing.Point(135, 114);
             this.uiLabel1.Name = "uiLabel1";
@@ -169,7 +120,7 @@
             // 
             // txtuser
             // 
-            this.txtuser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtuser.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtuser.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.txtuser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtuser.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
@@ -186,18 +137,67 @@
             this.txtuser.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.txtuser.Watermark = "";
             // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel3.Controls.Add(this.btnsignup);
+            this.panel3.Controls.Add(this.btnExit);
+            this.panel3.Controls.Add(this.btnLogin);
+            this.panel3.Location = new System.Drawing.Point(0, 432);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(816, 147);
+            this.panel3.TabIndex = 15;
+            // 
             // btnsignup
             // 
-            this.btnsignup.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnsignup.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnsignup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnsignup.Location = new System.Drawing.Point(290, 54);
+            this.btnsignup.Location = new System.Drawing.Point(506, 57);
             this.btnsignup.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnsignup.Name = "btnsignup";
             this.btnsignup.Size = new System.Drawing.Size(192, 35);
             this.btnsignup.TabIndex = 10;
             this.btnsignup.Text = "Sign up";
             this.btnsignup.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnExit.Location = new System.Drawing.Point(506, 112);
+            this.btnExit.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(192, 35);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnLogin.Location = new System.Drawing.Point(506, 6);
+            this.btnLogin.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(192, 35);
+            this.btnLogin.TabIndex = 8;
+            this.btnLogin.Text = "Log in";
+            this.btnLogin.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.Screenshot_2023_09_27_212121;
+            this.pictureBox1.Location = new System.Drawing.Point(341, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frm_dangnhap
             // 
@@ -209,10 +209,10 @@
             this.Controls.Add(this.panel1);
             this.Name = "frm_dangnhap";
             this.Text = "Đăng Nhập";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
