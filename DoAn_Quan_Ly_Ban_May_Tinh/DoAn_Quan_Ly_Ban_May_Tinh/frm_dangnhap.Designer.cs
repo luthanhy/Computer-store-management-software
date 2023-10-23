@@ -196,7 +196,7 @@
             this.btnsignup.Name = "btnsignup";
             this.btnsignup.Size = new System.Drawing.Size(192, 35);
             this.btnsignup.TabIndex = 10;
-            this.btnsignup.Text = " Create new account";
+            this.btnsignup.Text = "Sign up";
             this.btnsignup.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             // 
             // frm_dangnhap
