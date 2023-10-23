@@ -1,6 +1,6 @@
 ﻿namespace DoAn_Quan_Ly_Ban_May_Tinh
 {
-    partial class Form1
+    partial class frm_dangnhap
     {
         /// <summary>
         /// Required designer variable.
@@ -31,10 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Text = "frm_dangnhap";
         }
 
         #endregion
     }
 }
-
