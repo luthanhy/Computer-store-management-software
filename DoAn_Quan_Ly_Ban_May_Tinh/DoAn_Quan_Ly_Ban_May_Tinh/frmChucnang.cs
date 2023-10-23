@@ -251,5 +251,20 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
 
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmChucnang_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiPanel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
