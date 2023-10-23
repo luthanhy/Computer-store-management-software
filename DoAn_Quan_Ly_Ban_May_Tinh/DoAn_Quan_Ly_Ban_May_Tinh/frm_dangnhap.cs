@@ -16,5 +16,10 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
