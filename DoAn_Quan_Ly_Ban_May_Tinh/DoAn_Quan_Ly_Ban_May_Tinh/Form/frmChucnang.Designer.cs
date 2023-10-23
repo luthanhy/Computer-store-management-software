@@ -44,7 +44,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.uiGroupBox1 = new Sunny.UI.UIGroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.uiTextBox4 = new Sunny.UI.UITextBox();
             this.uiTextBox3 = new Sunny.UI.UITextBox();
@@ -278,8 +277,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Black;
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.groupBox1.Controls.Add(this.uiLabel4);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 32);
@@ -289,26 +287,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nghiệp Vụ";
             // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.laptop1;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(36, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(388, 426);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // uiLabel4
             // 
-            this.uiLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel4.Location = new System.Drawing.Point(634, 0);
+            this.uiLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiLabel4.Location = new System.Drawing.Point(633, -18);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(162, 56);
             this.uiLabel4.TabIndex = 0;
             this.uiLabel4.Text = "Home";
-            this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uiLabel4.Click += new System.EventHandler(this.uiLabel4_Click_1);
             // 
             // uiTextBox4
             // 
@@ -463,6 +451,5 @@
         private Sunny.UI.UIGroupBox uiGroupBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private Sunny.UI.UILabel uiLabel4;
-        private System.Windows.Forms.Button button1;
     }
 }

@@ -271,5 +271,10 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
 
         }
+
+        private void uiLabel4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

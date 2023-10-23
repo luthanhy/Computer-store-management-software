@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             Sunny.UI.UIGroupBox uiGroupBox3;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -86,13 +87,12 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.uiPanel2 = new Sunny.UI.UIPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.uiComboBox2 = new Sunny.UI.UIComboBox();
-            this.uiTextBox9 = new Sunny.UI.UITextBox();
-            this.uiTextBox7 = new Sunny.UI.UITextBox();
-            this.uiTextBox6 = new Sunny.UI.UITextBox();
-            this.uiTextBox5 = new Sunny.UI.UITextBox();
+            this.txtlmh = new Sunny.UI.UIComboBox();
+            this.txtgb = new Sunny.UI.UITextBox();
+            this.txttensp = new Sunny.UI.UITextBox();
+            this.txt_masp = new Sunny.UI.UITextBox();
             this.uiLabel21 = new Sunny.UI.UILabel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtsl = new System.Windows.Forms.NumericUpDown();
             this.uiLabel15 = new Sunny.UI.UILabel();
             this.uiLabel16 = new Sunny.UI.UILabel();
             this.uiLabel20 = new Sunny.UI.UILabel();
@@ -135,6 +135,15 @@
             this.uiButton1 = new Sunny.UI.UIButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.txtncn = new Sunny.UI.UIDatePicker();
+            this.uiAnalogMeter1 = new Sunny.UI.UIAnalogMeter();
+            this.maHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaBanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiMatHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaycapnhapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hangHoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             uiGroupBox3 = new Sunny.UI.UIGroupBox();
             uiGroupBox2 = new Sunny.UI.UIGroupBox();
             uiGroupBox4 = new Sunny.UI.UIGroupBox();
@@ -161,7 +170,8 @@
             this.tabPage1.SuspendLayout();
             this.uiPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.txtlmh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsl)).BeginInit();
             this.uiPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton9)).BeginInit();
             this.tabProduct.SuspendLayout();
@@ -170,6 +180,7 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView3)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // uiGroupBox3
@@ -192,6 +203,8 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.uiDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.uiDataGridView2.AutoGenerateColumns = false;
+            this.uiDataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.uiDataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.uiDataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -202,7 +215,16 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.uiDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.uiDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.uiDataGridView2.ColumnHeadersHeight = 32;
+            this.uiDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.uiDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maHangDataGridViewTextBoxColumn,
+            this.tenHangDataGridViewTextBoxColumn,
+            this.soLuongDataGridViewTextBoxColumn,
+            this.giaBanDataGridViewTextBoxColumn,
+            this.loaiMatHangDataGridViewTextBoxColumn,
+            this.ngaycapnhapDataGridViewTextBoxColumn});
+            this.uiDataGridView2.DataSource = this.hangHoaBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -237,6 +259,7 @@
             this.uiDataGridView2.SelectedIndex = -1;
             this.uiDataGridView2.Size = new System.Drawing.Size(1089, 230);
             this.uiDataGridView2.TabIndex = 27;
+            this.uiDataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.uiDataGridView2_CellClick);
             // 
             // uiPanel3
             // 
@@ -322,7 +345,7 @@
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -544,7 +567,7 @@
             dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -785,13 +808,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.uiComboBox2);
-            this.panel1.Controls.Add(this.uiTextBox9);
-            this.panel1.Controls.Add(this.uiTextBox7);
-            this.panel1.Controls.Add(this.uiTextBox6);
-            this.panel1.Controls.Add(this.uiTextBox5);
+            this.panel1.Controls.Add(this.txtncn);
+            this.panel1.Controls.Add(this.txtlmh);
+            this.panel1.Controls.Add(this.txtgb);
+            this.panel1.Controls.Add(this.txttensp);
+            this.panel1.Controls.Add(this.txt_masp);
             this.panel1.Controls.Add(this.uiLabel21);
-            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.txtsl);
             this.panel1.Controls.Add(this.uiLabel15);
             this.panel1.Controls.Add(this.uiLabel16);
             this.panel1.Controls.Add(this.uiLabel20);
@@ -802,92 +825,78 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1089, 213);
             this.panel1.TabIndex = 54;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // uiComboBox2
+            // txtlmh
             // 
-            this.uiComboBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.uiComboBox2.DataSource = null;
-            this.uiComboBox2.FillColor = System.Drawing.Color.White;
-            this.uiComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiComboBox2.Location = new System.Drawing.Point(738, 137);
-            this.uiComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox2.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox2.Name = "uiComboBox2";
-            this.uiComboBox2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox2.Size = new System.Drawing.Size(233, 29);
-            this.uiComboBox2.TabIndex = 68;
-            this.uiComboBox2.Text = "uiComboBox2";
-            this.uiComboBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiComboBox2.Watermark = "";
-            this.uiComboBox2.SelectedIndexChanged += new System.EventHandler(this.uiComboBox2_SelectedIndexChanged);
+            this.txtlmh.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtlmh.CausesValidation = false;
+            this.txtlmh.Controls.Add(this.uiAnalogMeter1);
+            this.txtlmh.Cursor = System.Windows.Forms.Cursors.No;
+            this.txtlmh.DataSource = null;
+            this.txtlmh.FillColor = System.Drawing.Color.White;
+            this.txtlmh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtlmh.Location = new System.Drawing.Point(738, 137);
+            this.txtlmh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtlmh.MinimumSize = new System.Drawing.Size(63, 0);
+            this.txtlmh.Name = "txtlmh";
+            this.txtlmh.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.txtlmh.Size = new System.Drawing.Size(233, 29);
+            this.txtlmh.TabIndex = 68;
+            this.txtlmh.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtlmh.Watermark = "";
+            this.txtlmh.SelectedIndexChanged += new System.EventHandler(this.uiComboBox2_SelectedIndexChanged);
             // 
-            // uiTextBox9
+            // txtgb
             // 
-            this.uiTextBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.uiTextBox9.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
-            this.uiTextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiTextBox9.Location = new System.Drawing.Point(738, 78);
-            this.uiTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox9.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox9.Name = "uiTextBox9";
-            this.uiTextBox9.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox9.ShowText = false;
-            this.uiTextBox9.Size = new System.Drawing.Size(233, 30);
-            this.uiTextBox9.TabIndex = 67;
-            this.uiTextBox9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox9.Watermark = "";
+            this.txtgb.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtgb.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
+            this.txtgb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtgb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtgb.Location = new System.Drawing.Point(738, 78);
+            this.txtgb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtgb.MinimumSize = new System.Drawing.Size(1, 16);
+            this.txtgb.Name = "txtgb";
+            this.txtgb.Padding = new System.Windows.Forms.Padding(5);
+            this.txtgb.ShowText = false;
+            this.txtgb.Size = new System.Drawing.Size(233, 30);
+            this.txtgb.TabIndex = 67;
+            this.txtgb.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtgb.Watermark = "";
             // 
-            // uiTextBox7
+            // txttensp
             // 
-            this.uiTextBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.uiTextBox7.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
-            this.uiTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiTextBox7.Location = new System.Drawing.Point(209, 136);
-            this.uiTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox7.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox7.Name = "uiTextBox7";
-            this.uiTextBox7.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox7.ShowText = false;
-            this.uiTextBox7.Size = new System.Drawing.Size(233, 30);
-            this.uiTextBox7.TabIndex = 66;
-            this.uiTextBox7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox7.Watermark = "";
+            this.txttensp.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txttensp.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
+            this.txttensp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txttensp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txttensp.Location = new System.Drawing.Point(209, 78);
+            this.txttensp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txttensp.MinimumSize = new System.Drawing.Size(1, 16);
+            this.txttensp.Name = "txttensp";
+            this.txttensp.Padding = new System.Windows.Forms.Padding(5);
+            this.txttensp.ShowText = false;
+            this.txttensp.Size = new System.Drawing.Size(233, 30);
+            this.txttensp.TabIndex = 65;
+            this.txttensp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txttensp.Watermark = "";
             // 
-            // uiTextBox6
+            // txt_masp
             // 
-            this.uiTextBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.uiTextBox6.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
-            this.uiTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiTextBox6.Location = new System.Drawing.Point(209, 78);
-            this.uiTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox6.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox6.Name = "uiTextBox6";
-            this.uiTextBox6.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox6.ShowText = false;
-            this.uiTextBox6.Size = new System.Drawing.Size(233, 30);
-            this.uiTextBox6.TabIndex = 65;
-            this.uiTextBox6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox6.Watermark = "";
-            // 
-            // uiTextBox5
-            // 
-            this.uiTextBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.uiTextBox5.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
-            this.uiTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiTextBox5.Location = new System.Drawing.Point(209, 24);
-            this.uiTextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox5.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox5.Name = "uiTextBox5";
-            this.uiTextBox5.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox5.ShowText = false;
-            this.uiTextBox5.Size = new System.Drawing.Size(233, 30);
-            this.uiTextBox5.TabIndex = 64;
-            this.uiTextBox5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox5.Watermark = "";
+            this.txt_masp.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_masp.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
+            this.txt_masp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_masp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_masp.Location = new System.Drawing.Point(209, 24);
+            this.txt_masp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_masp.MinimumSize = new System.Drawing.Size(1, 16);
+            this.txt_masp.Name = "txt_masp";
+            this.txt_masp.Padding = new System.Windows.Forms.Padding(5);
+            this.txt_masp.ShowText = false;
+            this.txt_masp.Size = new System.Drawing.Size(233, 30);
+            this.txt_masp.TabIndex = 64;
+            this.txt_masp.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txt_masp.Watermark = "";
             // 
             // uiLabel21
             // 
@@ -902,13 +911,13 @@
             this.uiLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel21.Click += new System.EventHandler(this.uiLabel21_Click);
             // 
-            // numericUpDown1
+            // txtsl
             // 
-            this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDown1.Location = new System.Drawing.Point(738, 24);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(233, 30);
-            this.numericUpDown1.TabIndex = 62;
+            this.txtsl.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtsl.Location = new System.Drawing.Point(738, 24);
+            this.txtsl.Name = "txtsl";
+            this.txtsl.Size = new System.Drawing.Size(233, 30);
+            this.txtsl.TabIndex = 62;
             // 
             // uiLabel15
             // 
@@ -1526,6 +1535,86 @@
             this.tabPage4.Text = "Quản Lý Sales";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // txtncn
+            // 
+            this.txtncn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtncn.FillColor = System.Drawing.Color.White;
+            this.txtncn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtncn.Location = new System.Drawing.Point(209, 137);
+            this.txtncn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtncn.MaxLength = 10;
+            this.txtncn.MinimumSize = new System.Drawing.Size(63, 0);
+            this.txtncn.Name = "txtncn";
+            this.txtncn.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.txtncn.Size = new System.Drawing.Size(233, 29);
+            this.txtncn.SymbolDropDown = 61555;
+            this.txtncn.SymbolNormal = 61555;
+            this.txtncn.TabIndex = 1;
+            this.txtncn.Text = "2023-10-23";
+            this.txtncn.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtncn.Value = new System.DateTime(2023, 10, 23, 21, 20, 4, 551);
+            this.txtncn.Watermark = "";
+            // 
+            // uiAnalogMeter1
+            // 
+            this.uiAnalogMeter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.uiAnalogMeter1.Location = new System.Drawing.Point(219, 15);
+            this.uiAnalogMeter1.MaxValue = 100D;
+            this.uiAnalogMeter1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiAnalogMeter1.MinValue = 0D;
+            this.uiAnalogMeter1.Name = "uiAnalogMeter1";
+            this.uiAnalogMeter1.Renderer = null;
+            this.uiAnalogMeter1.Size = new System.Drawing.Size(180, 180);
+            this.uiAnalogMeter1.TabIndex = 1;
+            this.uiAnalogMeter1.Text = "uiAnalogMeter1";
+            this.uiAnalogMeter1.Value = 0D;
+            // 
+            // maHangDataGridViewTextBoxColumn
+            // 
+            this.maHangDataGridViewTextBoxColumn.DataPropertyName = "MaHang";
+            this.maHangDataGridViewTextBoxColumn.HeaderText = "Mã Sản Phẩm";
+            this.maHangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maHangDataGridViewTextBoxColumn.Name = "maHangDataGridViewTextBoxColumn";
+            // 
+            // tenHangDataGridViewTextBoxColumn
+            // 
+            this.tenHangDataGridViewTextBoxColumn.DataPropertyName = "TenHang";
+            this.tenHangDataGridViewTextBoxColumn.HeaderText = "Tên Sản Phẩm";
+            this.tenHangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenHangDataGridViewTextBoxColumn.Name = "tenHangDataGridViewTextBoxColumn";
+            // 
+            // soLuongDataGridViewTextBoxColumn
+            // 
+            this.soLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn.HeaderText = "Số Lượng";
+            this.soLuongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soLuongDataGridViewTextBoxColumn.Name = "soLuongDataGridViewTextBoxColumn";
+            // 
+            // giaBanDataGridViewTextBoxColumn
+            // 
+            this.giaBanDataGridViewTextBoxColumn.DataPropertyName = "GiaBan";
+            this.giaBanDataGridViewTextBoxColumn.HeaderText = "Giá Bán";
+            this.giaBanDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.giaBanDataGridViewTextBoxColumn.Name = "giaBanDataGridViewTextBoxColumn";
+            // 
+            // loaiMatHangDataGridViewTextBoxColumn
+            // 
+            this.loaiMatHangDataGridViewTextBoxColumn.DataPropertyName = "LoaiMatHang";
+            this.loaiMatHangDataGridViewTextBoxColumn.HeaderText = "Loại Mặt Hàng";
+            this.loaiMatHangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.loaiMatHangDataGridViewTextBoxColumn.Name = "loaiMatHangDataGridViewTextBoxColumn";
+            // 
+            // ngaycapnhapDataGridViewTextBoxColumn
+            // 
+            this.ngaycapnhapDataGridViewTextBoxColumn.DataPropertyName = "ngaycapnhap";
+            this.ngaycapnhapDataGridViewTextBoxColumn.HeaderText = "Ngày Cập Nhập";
+            this.ngaycapnhapDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ngaycapnhapDataGridViewTextBoxColumn.Name = "ngaycapnhapDataGridViewTextBoxColumn";
+            // 
+            // hangHoaBindingSource
+            // 
+            this.hangHoaBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.HangHoa);
+            // 
             // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1558,7 +1647,8 @@
             this.tabPage1.ResumeLayout(false);
             this.uiPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.txtlmh.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtsl)).EndInit();
             this.uiPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton9)).EndInit();
             this.tabProduct.ResumeLayout(false);
@@ -1567,6 +1657,7 @@
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView3)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1582,13 +1673,12 @@
         private Sunny.UI.UITextBox uiTextBox10;
         private Sunny.UI.UIImageButton uiImageButton10;
         private System.Windows.Forms.Panel panel1;
-        private Sunny.UI.UIComboBox uiComboBox2;
-        private Sunny.UI.UITextBox uiTextBox9;
-        private Sunny.UI.UITextBox uiTextBox7;
-        private Sunny.UI.UITextBox uiTextBox6;
-        private Sunny.UI.UITextBox uiTextBox5;
+        private Sunny.UI.UIComboBox txtlmh;
+        private Sunny.UI.UITextBox txtgb;
+        private Sunny.UI.UITextBox txttensp;
+        private Sunny.UI.UITextBox txt_masp;
         private Sunny.UI.UILabel uiLabel21;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown txtsl;
         private Sunny.UI.UILabel uiLabel15;
         private Sunny.UI.UILabel uiLabel16;
         private Sunny.UI.UILabel uiLabel20;
@@ -1647,5 +1737,14 @@
         private Sunny.UI.UIButton uiButton1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.BindingSource hangHoaBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maHangDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenHangDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soLuongDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giaBanDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaiMatHangDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaycapnhapDataGridViewTextBoxColumn;
+        private Sunny.UI.UIDatePicker txtncn;
+        private Sunny.UI.UIAnalogMeter uiAnalogMeter1;
     }
 }

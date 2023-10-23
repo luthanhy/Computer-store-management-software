@@ -118,6 +118,7 @@
     <Compile Include="Form\Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Script\FormatData.cs" />
     <EmbeddedResource Include="Form\frmcaidat.resx">
       <DependentUpon>frmcaidat.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +151,7 @@
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\HangHoa.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -208,6 +210,7 @@
   <ItemGroup>
     <None Include="Resources\laptop1.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
