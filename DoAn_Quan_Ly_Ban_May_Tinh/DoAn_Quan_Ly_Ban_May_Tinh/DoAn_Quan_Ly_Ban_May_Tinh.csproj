@@ -54,6 +54,8 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -66,66 +68,72 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmChucnang.cs">
+    <Compile Include="Model\ChiTietHoaDon.cs" />
+    <Compile Include="Model\DBContext.cs" />
+    <Compile Include="Form\frmChucnang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmChucnang.Designer.cs">
+    <Compile Include="Form\frmChucnang.Designer.cs">
       <DependentUpon>frmChucnang.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmcaidat.cs">
+    <Compile Include="Form\frmcaidat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmcaidat.Designer.cs">
+    <Compile Include="Form\frmcaidat.Designer.cs">
       <DependentUpon>frmcaidat.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmhome.cs">
+    <Compile Include="Form\frmhome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmhome.Designer.cs">
+    <Compile Include="Form\frmhome.Designer.cs">
       <DependentUpon>frmhome.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmtrogiup.cs">
+    <Compile Include="Form\frmtrogiup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmtrogiup.Designer.cs">
+    <Compile Include="Form\frmtrogiup.Designer.cs">
       <DependentUpon>frmtrogiup.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_dangki.cs">
+    <Compile Include="Form\frm_dangki.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_dangki.Designer.cs">
+    <Compile Include="Form\frm_dangki.Designer.cs">
       <DependentUpon>frm_dangki.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_dangnhap.cs">
+    <Compile Include="Form\frm_dangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_dangnhap.Designer.cs">
+    <Compile Include="Form\frm_dangnhap.Designer.cs">
       <DependentUpon>frm_dangnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\HangHoa.cs" />
+    <Compile Include="Model\HoaDon.cs" />
+    <Compile Include="Model\KhachHang.cs" />
+    <Compile Include="Model\PhieuXuatHang.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Test.cs">
+    <Compile Include="Form\Test.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Test.Designer.cs">
+    <Compile Include="Form\Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmcaidat.resx">
+    <EmbeddedResource Include="Form\frmcaidat.resx">
       <DependentUpon>frmcaidat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmChucnang.resx">
+    <EmbeddedResource Include="Form\frmChucnang.resx">
       <DependentUpon>frmChucnang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmhome.resx">
+    <EmbeddedResource Include="Form\frmhome.resx">
       <DependentUpon>frmhome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmtrogiup.resx">
+    <EmbeddedResource Include="Form\frmtrogiup.resx">
       <DependentUpon>frmtrogiup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_dangki.resx">
+    <EmbeddedResource Include="Form\frm_dangki.resx">
       <DependentUpon>frm_dangki.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_dangnhap.resx">
+    <EmbeddedResource Include="Form\frm_dangnhap.resx">
       <DependentUpon>frm_dangnhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -138,7 +146,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Test.resx">
+    <EmbeddedResource Include="Form\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

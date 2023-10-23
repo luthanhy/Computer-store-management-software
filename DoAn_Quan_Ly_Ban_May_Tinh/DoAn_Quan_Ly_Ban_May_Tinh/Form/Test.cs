@@ -16,5 +16,21 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             InitializeComponent();
         }
+
+        private void uiComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiLabel21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Test_Load(object sender, EventArgs e)
+        {
+            //this.Size = new Size(5000, 5000);
+            this.WindowState  = FormWindowState.Maximized;
+        }
     }
 }

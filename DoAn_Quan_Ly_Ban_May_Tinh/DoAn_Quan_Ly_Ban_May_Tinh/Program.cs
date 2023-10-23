@@ -16,7 +16,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmChucnang());
+            Application.Run(new DoAn_Quan_Ly_Ban_May_Tinh.Test());
         }
     }
 }
