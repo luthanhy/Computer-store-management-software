@@ -34,9 +34,12 @@
             // 
             // btndangxuat
             // 
+            this.btndangxuat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btndangxuat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btndangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btndangxuat.Location = new System.Drawing.Point(239, 139);
+            this.btndangxuat.Location = new System.Drawing.Point(262, 171);
             this.btndangxuat.MinimumSize = new System.Drawing.Size(1, 1);
             this.btndangxuat.Name = "btndangxuat";
             this.btndangxuat.Size = new System.Drawing.Size(100, 71);
@@ -46,9 +49,12 @@
             // 
             // btnthoat
             // 
+            this.btnthoat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnthoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnthoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnthoat.Location = new System.Drawing.Point(378, 139);
+            this.btnthoat.Location = new System.Drawing.Point(401, 171);
             this.btnthoat.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(100, 71);

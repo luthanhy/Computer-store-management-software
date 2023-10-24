@@ -73,6 +73,16 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap laptop {
+            get {
+                object obj = ResourceManager.GetObject("laptop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap laptop1 {
             get {
                 object obj = ResourceManager.GetObject("laptop1", resourceCulture);
@@ -86,6 +96,16 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh.Properties {
         internal static System.Drawing.Bitmap product_design {
             get {
                 object obj = ResourceManager.GetObject("product-design", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QLBH {
+            get {
+                object obj = ResourceManager.GetObject("QLBH", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
