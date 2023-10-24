@@ -259,83 +259,10 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         private void frmChucnang_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+
         }
-        private void  SetupScrollBars()
-        {
-            //uiVerScrollBarEx1.MinimumSize = uiGroupBox1.VerticalScroll.Minimum;
-        }
+
         private void uiPanel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiScrollBar1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiLabel4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiGroupBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiVerScrollBarEx1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button11_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button12_Click_1(object sender, EventArgs e)
         {
 
         }

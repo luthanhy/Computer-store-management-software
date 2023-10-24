@@ -16,10 +16,5 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             InitializeComponent();
         }
-
-        private void Test_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
