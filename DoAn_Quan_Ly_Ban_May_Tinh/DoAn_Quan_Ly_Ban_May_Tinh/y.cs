@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoAn_Quan_Ly_Ban_May_Tinh
 {
-    public partial class frmhome : Form
+    public partial class y : Form
     {
-        public frmhome()
+        public y()
         {
             InitializeComponent();
         }

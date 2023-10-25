@@ -42,6 +42,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.Desktop.UI.2.1.1\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
     <Reference Include="SunnyUI, Version=3.5.1.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb, processorArchitecture=MSIL">
       <HintPath>..\packages\SunnyUI.3.5.1\lib\net472\SunnyUI.dll</HintPath>
     </Reference>
@@ -82,12 +85,6 @@
     <Compile Include="Form\frmcaidat.Designer.cs">
       <DependentUpon>frmcaidat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\frmhome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\frmhome.Designer.cs">
-      <DependentUpon>frmhome.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form\frmtrogiup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,14 +117,17 @@
     </Compile>
     <Compile Include="Script\FormatData.cs" />
     <Compile Include="Model\sysdiagram.cs" />
+    <Compile Include="y.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="y.Designer.cs">
+      <DependentUpon>y.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form\frmcaidat.resx">
       <DependentUpon>frmcaidat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmChucnang.resx">
       <DependentUpon>frmChucnang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\frmhome.resx">
-      <DependentUpon>frmhome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\frmtrogiup.resx">
       <DependentUpon>frmtrogiup.cs</DependentUpon>
@@ -150,6 +150,9 @@
     </Compile>
     <EmbeddedResource Include="Form\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="y.resx">
+      <DependentUpon>y.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\HangHoa.datasource" />

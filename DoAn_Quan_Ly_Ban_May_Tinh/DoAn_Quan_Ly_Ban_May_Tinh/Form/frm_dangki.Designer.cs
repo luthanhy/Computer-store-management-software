@@ -30,15 +30,15 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.uiLabel1 = new Sunny.UI.UILabel();
-            this.txtpassword = new Sunny.UI.UITextBox();
+            this.txtmatkhau = new Sunny.UI.UITextBox();
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.txttaikhoan = new Sunny.UI.UITextBox();
-            this.txtXacnhanMK = new Sunny.UI.UITextBox();
+            this.txtxacnhanmatkhau = new Sunny.UI.UITextBox();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.btndangki = new Sunny.UI.UIButton();
             this.uiLabel5 = new Sunny.UI.UILabel();
-            this.txtusername = new Sunny.UI.UITextBox();
+            this.txttennguoidung = new Sunny.UI.UITextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,22 +62,22 @@
             this.uiLabel1.Text = "ĐĂNG KÍ TÀI KHOẢN";
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtpassword
+            // txtmatkhau
             // 
-            this.txtpassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtpassword.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
-            this.txtpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtpassword.Location = new System.Drawing.Point(410, 300);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtpassword.MinimumSize = new System.Drawing.Size(1, 16);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Padding = new System.Windows.Forms.Padding(5);
-            this.txtpassword.ShowText = false;
-            this.txtpassword.Size = new System.Drawing.Size(375, 44);
-            this.txtpassword.TabIndex = 20;
-            this.txtpassword.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtpassword.Watermark = "";
+            this.txtmatkhau.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtmatkhau.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
+            this.txtmatkhau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtmatkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtmatkhau.Location = new System.Drawing.Point(410, 300);
+            this.txtmatkhau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtmatkhau.MinimumSize = new System.Drawing.Size(1, 16);
+            this.txtmatkhau.Name = "txtmatkhau";
+            this.txtmatkhau.Padding = new System.Windows.Forms.Padding(5);
+            this.txtmatkhau.ShowText = false;
+            this.txtmatkhau.Size = new System.Drawing.Size(375, 44);
+            this.txtmatkhau.TabIndex = 20;
+            this.txtmatkhau.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtmatkhau.Watermark = "";
             // 
             // uiLabel2
             // 
@@ -120,22 +120,22 @@
             this.txttaikhoan.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.txttaikhoan.Watermark = "";
             // 
-            // txtXacnhanMK
+            // txtxacnhanmatkhau
             // 
-            this.txtXacnhanMK.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtXacnhanMK.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
-            this.txtXacnhanMK.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtXacnhanMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtXacnhanMK.Location = new System.Drawing.Point(410, 376);
-            this.txtXacnhanMK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtXacnhanMK.MinimumSize = new System.Drawing.Size(1, 16);
-            this.txtXacnhanMK.Name = "txtXacnhanMK";
-            this.txtXacnhanMK.Padding = new System.Windows.Forms.Padding(5);
-            this.txtXacnhanMK.ShowText = false;
-            this.txtXacnhanMK.Size = new System.Drawing.Size(375, 44);
-            this.txtXacnhanMK.TabIndex = 23;
-            this.txtXacnhanMK.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtXacnhanMK.Watermark = "";
+            this.txtxacnhanmatkhau.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtxacnhanmatkhau.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
+            this.txtxacnhanmatkhau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtxacnhanmatkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtxacnhanmatkhau.Location = new System.Drawing.Point(410, 376);
+            this.txtxacnhanmatkhau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtxacnhanmatkhau.MinimumSize = new System.Drawing.Size(1, 16);
+            this.txtxacnhanmatkhau.Name = "txtxacnhanmatkhau";
+            this.txtxacnhanmatkhau.Padding = new System.Windows.Forms.Padding(5);
+            this.txtxacnhanmatkhau.ShowText = false;
+            this.txtxacnhanmatkhau.Size = new System.Drawing.Size(375, 44);
+            this.txtxacnhanmatkhau.TabIndex = 23;
+            this.txtxacnhanmatkhau.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtxacnhanmatkhau.Watermark = "";
             // 
             // uiLabel4
             // 
@@ -175,24 +175,24 @@
             this.uiLabel5.Text = "Tên Người Dùng";
             this.uiLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtusername
+            // txttennguoidung
             // 
-            this.txtusername.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtusername.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.txtusername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtusername.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
-            this.txtusername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtusername.Location = new System.Drawing.Point(410, 141);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtusername.MinimumSize = new System.Drawing.Size(1, 16);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Padding = new System.Windows.Forms.Padding(5);
-            this.txtusername.ShowText = false;
-            this.txtusername.Size = new System.Drawing.Size(375, 44);
-            this.txtusername.TabIndex = 26;
-            this.txtusername.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtusername.Watermark = "";
+            this.txttennguoidung.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txttennguoidung.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.txttennguoidung.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txttennguoidung.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
+            this.txttennguoidung.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txttennguoidung.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txttennguoidung.Location = new System.Drawing.Point(410, 141);
+            this.txttennguoidung.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txttennguoidung.MinimumSize = new System.Drawing.Size(1, 16);
+            this.txttennguoidung.Name = "txttennguoidung";
+            this.txttennguoidung.Padding = new System.Windows.Forms.Padding(5);
+            this.txttennguoidung.ShowText = false;
+            this.txttennguoidung.Size = new System.Drawing.Size(375, 44);
+            this.txttennguoidung.TabIndex = 26;
+            this.txttennguoidung.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txttennguoidung.Watermark = "";
             // 
             // frm_dangki
             // 
@@ -200,11 +200,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 563);
             this.Controls.Add(this.uiLabel5);
-            this.Controls.Add(this.txtusername);
+            this.Controls.Add(this.txttennguoidung);
             this.Controls.Add(this.btndangki);
-            this.Controls.Add(this.txtXacnhanMK);
+            this.Controls.Add(this.txtxacnhanmatkhau);
             this.Controls.Add(this.uiLabel4);
-            this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.txtmatkhau);
             this.Controls.Add(this.uiLabel2);
             this.Controls.Add(this.uiLabel3);
             this.Controls.Add(this.txttaikhoan);
@@ -220,14 +220,14 @@
 
         private System.Windows.Forms.Panel panel1;
         private Sunny.UI.UILabel uiLabel1;
-        private Sunny.UI.UITextBox txtpassword;
+        private Sunny.UI.UITextBox txtmatkhau;
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UILabel uiLabel3;
         private Sunny.UI.UITextBox txttaikhoan;
-        private Sunny.UI.UITextBox txtXacnhanMK;
+        private Sunny.UI.UITextBox txtxacnhanmatkhau;
         private Sunny.UI.UILabel uiLabel4;
         private Sunny.UI.UIButton btndangki;
         private Sunny.UI.UILabel uiLabel5;
-        private Sunny.UI.UITextBox txtusername;
+        private Sunny.UI.UITextBox txttennguoidung;
     }
 }

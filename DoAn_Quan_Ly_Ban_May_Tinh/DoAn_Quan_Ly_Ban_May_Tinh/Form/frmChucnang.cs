@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Sunny.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,6 +17,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         public frmChucnang()
         {
             InitializeComponent();
+            Scroll_Bar();
         }
 
         private void tabProduct_Click(object sender, EventArgs e)
@@ -256,12 +259,55 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
 
         }
-
+        #region code
         private void frmChucnang_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+        private void Scroll_Bar()
+            {
+            //uiHorScrollBarEx1.Value = uiFlowLayoutPanel1.VerticalScroll.Value;
+            // uiHorScrollBarEx1.MinimumSize = uiFlowLayoutPanel1.VerticalScroll.Minimum;
+           // uiFlowLayoutPanel1.ControlAdded += uiFlowLayoutPanel1_ControlAdded;
+            }
+
+        private void uiFlowLayoutPanel1_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+            //uiHorScrollBarEx1.Maximum = uiFlowLayoutPanel1.VerticalScroll.Maximum;
+        }
+
+        private void uiHorScrollBarEx1_Click(object sender, EventArgs e)
         {
 
         }
+        private void bntthemsp_Click(object sender, EventArgs e)
+        {
+            Button button = new Button();
+            button.Text = "Button";
+            button.Size = new System.Drawing.Size(321, 236);
 
+            TextBox textBox1 = new TextBox();
+            textBox1.Text = "Name";
+            textBox1.Size = new System.Drawing.Size(225, 23);
+
+            TextBox textBox2 = new TextBox();
+            textBox2.Text = "Price";
+            textBox2.Size = new System.Drawing.Size(155, 23);
+
+            ////uiFlowLayoutPanel1.Controls.Add(button);
+            ////uiFlowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            ////uiFlowLayoutPanel1.Controls.Add(textBox1);
+            ////uiFlowLayoutPanel1.Controls.Add(textBox2);
+            flowLayoutPanel1.FlowDirection = FlowDirection.LeftToRight;
+            flowLayoutPanel1.Controls.Add(button);
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Controls.Add(textBox1);
+            flowLayoutPanel1.Controls.Add(textBox2);
+
+        }
+  
+        #endregion
         private void uiPanel2_Click(object sender, EventArgs e)
         {
 
@@ -276,5 +322,11 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
 
         }
+
+        private void src_home_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
