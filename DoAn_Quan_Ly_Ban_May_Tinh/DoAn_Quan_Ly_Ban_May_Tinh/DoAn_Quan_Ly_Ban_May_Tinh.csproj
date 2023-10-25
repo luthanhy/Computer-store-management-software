@@ -170,7 +170,9 @@
       <DependentUpon>y.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ChiTietHoaDon.datasource" />
     <None Include="Properties\DataSources\HangHoa.datasource" />
+    <None Include="Properties\DataSources\KhachHang.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
