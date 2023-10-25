@@ -1,4 +1,5 @@
-﻿using Sunny.UI;
+﻿using DoAn_Quan_Ly_Ban_May_Tinh.Script;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -239,12 +240,55 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
 
         }
+
+        private Script.FormatData formatdata = new FormatData();
+        private List<HangHoa> HangHoaList = new List<HangHoa>();
         #region code
         private void frmChucnang_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
             groupBox1.Visible = true;
+            if(menu.Visible == true)
+            {
+                formatdata.AddComboBoxLMH(txtlmh);
+                formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
+            }
             menu.Visible = false;
+        }
+
+        private void uiDataGridView2_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            var index = uiDataGridView2.CurrentCell.RowIndex;
+            if (index >= 0)
+            {
+                var selectrow = uiDataGridView2.Rows[index];
+                txt_masp.Text = selectrow.Cells[0].Value.ToString();
+                txttensp.Text = selectrow.Cells[1].Value.ToString();
+                txtsl.Value = decimal.Parse(selectrow.Cells[3].Value.ToString());
+                txtgb.Text = selectrow.Cells[4].Value.ToString();
+                txtlmh.Text = selectrow.Cells[5].Value.ToString();
+                txtncn.Text = selectrow.Cells[6].Value.ToString();
+            }
+        }
+       
+        public void AddSaveFix(bool IsFix, bool IsAdd)
+        {
+            try
+            {
+                DBContext dBContext = new DBContext();
+                if (IsFix == true)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void uiImageButton5_Click(object sender, EventArgs e)
@@ -344,5 +388,11 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             frmtg.ShowDialog();
             this.Show();
         }
+
+        private void uiDataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }
