@@ -1,4 +1,5 @@
 ﻿using DoAn_Quan_Ly_Ban_May_Tinh.Script;
+using Microsoft.Reporting.WinForms;
 using Sunny.UI;
 using System;
 using System.Collections.Generic;
@@ -243,6 +244,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         private Script.FormatData formatdata = new FormatData();
         private List<HangHoa> HangHoaList = new List<HangHoa>();
+        
         #region code
         private void frmChucnang_Load(object sender, EventArgs e)
         {
@@ -254,6 +256,15 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
             }
             menu.Visible = false;
+            if(menu.Visible == true)
+            {
+                reportViewer1.LocalReport.ReportEmbeddedResource = "DoAn_Quan_Ly_Ban_May_Tinh.Report2.rdlc";
+                ReportDataSource reportData = new ReportDataSource();
+                reportData.Name = "DataSet1";
+                //reportData.Value = 
+                reportViewer1.LocalReport.DataSources.Add(reportData);
+                this.reportViewer1.RefreshReport();
+            }
         }
 
         private void uiDataGridView2_CellClick_1(object sender, DataGridViewCellEventArgs e)
@@ -394,5 +405,14 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         }
 
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+            reportViewer1.LocalReport.ReportEmbeddedResource = "DoAn_Quan_Ly_Ban_May_Tinh.Report2.rdlc";
+            ReportDataSource reportData = new ReportDataSource();
+            reportData.Name = "DataSet1";
+            reportData.Value = "";
+            reportViewer1.LocalReport.DataSources.Add(reportData);
+            this.reportViewer1.Refresh();
+        }
     }
 }
