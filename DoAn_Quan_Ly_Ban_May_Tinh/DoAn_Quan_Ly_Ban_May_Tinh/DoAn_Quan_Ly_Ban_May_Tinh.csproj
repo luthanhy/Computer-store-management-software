@@ -119,6 +119,7 @@
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
     <Compile Include="Script\FormatData.cs" />
+    <Compile Include="Model\sysdiagram.cs" />
     <EmbeddedResource Include="Form\frmcaidat.resx">
       <DependentUpon>frmcaidat.cs</DependentUpon>
     </EmbeddedResource>

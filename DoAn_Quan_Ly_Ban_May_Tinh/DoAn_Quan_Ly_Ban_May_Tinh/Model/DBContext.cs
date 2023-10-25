@@ -8,7 +8,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
     public partial class DBContext : DbContext
     {
         public DBContext()
-            : base("name=DBContext")
+            : base("name=DBContext1")
         {
         }
 
@@ -17,6 +17,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<PhieuXuatHang> PhieuXuatHangs { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
