@@ -17,8 +17,8 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         public frmChucnang()
         {
             InitializeComponent();
-            Scroll_Bar();
         }
+
 
         private void tabProduct_Click(object sender, EventArgs e)
         {
@@ -40,20 +40,12 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         }
 
-        private void uiImageButton6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void uiLabel4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void uiImageButton5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void uiLabel3_Click(object sender, EventArgs e)
         {
@@ -65,30 +57,18 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         }
 
-        private void uiImageButton3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void uiLabel2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void uiImageButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void uiLabel1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void uiImageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -263,6 +243,41 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         private void frmChucnang_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            groupBox1.Visible = true;
+            menu.Visible = false;
+        }
+
+        private void uiImageButton5_Click(object sender, EventArgs e)
+        {
+
+            menu.Visible = true;
+            menu.SelectTab(4);
+
+        }
+        private void uiImageButton3_Click(object sender, EventArgs e)
+        {
+
+            menu.Visible = true;
+            menu.SelectTab(3);
+
+        }
+        private void uiImageButton6_Click(object sender, EventArgs e)
+        {
+            menu.Visible = false;
+            groupBox1.Visible = true;
+        }
+        private void uiImageButton2_Click(object sender, EventArgs e)
+        {
+            menu.Visible = true;
+            menu.SelectTab(1);
+        }
+
+        private void uiImageButton1_Click(object sender, EventArgs e)
+        {
+
+            menu.Visible = true;
+            menu.SelectTab(0);
+            groupBox1.Visible = false;
         }
         private void Scroll_Bar()
             {
@@ -285,26 +300,10 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             Button button = new Button();
             button.Text = "Button";
-            button.Size = new System.Drawing.Size(321, 236);
-
-            TextBox textBox1 = new TextBox();
-            textBox1.Text = "Name";
-            textBox1.Size = new System.Drawing.Size(225, 23);
-
-            TextBox textBox2 = new TextBox();
-            textBox2.Text = "Price";
-            textBox2.Size = new System.Drawing.Size(155, 23);
-
-            ////uiFlowLayoutPanel1.Controls.Add(button);
-            ////uiFlowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            ////uiFlowLayoutPanel1.Controls.Add(textBox1);
-            ////uiFlowLayoutPanel1.Controls.Add(textBox2);
-            flowLayoutPanel1.FlowDirection = FlowDirection.LeftToRight;
+            button.Size = new System.Drawing.Size(300, 236);
+            // Đặt hình ảnh cho Button từ tệp ảnh
+            button.Image = Image.FromFile(@"D:\QLDA\DoAn_Quan_Ly_Ban_May_Tinh\DoAn_Quan_Ly_Ban_May_Tinh\Resources\mac.png");
             flowLayoutPanel1.Controls.Add(button);
-            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel1.Controls.Add(textBox1);
-            flowLayoutPanel1.Controls.Add(textBox2);
-
         }
   
         #endregion
@@ -328,5 +327,22 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         }
 
+        private void btnhelp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmtrogiup frmtg= new frmtrogiup();
+            frmtg.WindowState  = FormWindowState.Maximized;
+            frmtg.ShowDialog();
+            this.Show();
+        }
+
+        private void btnsetting_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmcaidat frmtg = new frmcaidat();
+            frmtg.WindowState = FormWindowState.Maximized;
+            frmtg.ShowDialog();
+            this.Show();
+        }
     }
 }
