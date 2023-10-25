@@ -243,6 +243,8 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         private Script.FormatData formatdata = new FormatData();
         private List<HangHoa> HangHoaList = new List<HangHoa>();
+        private List<KhachHang> khachhanglist = new List<KhachHang>();
+        private List<ChiTietHoaDon> chitiethoadonlist = new List<ChiTietHoaDon>();
         #region code
         private void frmChucnang_Load(object sender, EventArgs e)
         {
@@ -252,6 +254,8 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             {
                 formatdata.AddComboBoxLMH(txtlmh);
                 formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
+                formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
+                formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
             }
             menu.Visible = false;
         }
@@ -394,5 +398,9 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         }
 
+        private void dgvHoaDon_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

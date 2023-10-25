@@ -8,7 +8,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
     public partial class DBContext : DbContext
     {
         public DBContext()
-            : base("name=DBContext1")
+            : base("name=DBContext")
         {
         }
 
