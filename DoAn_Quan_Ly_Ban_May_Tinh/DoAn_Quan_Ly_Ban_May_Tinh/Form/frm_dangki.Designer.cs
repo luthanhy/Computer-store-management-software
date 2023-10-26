@@ -175,6 +175,7 @@
             this.btndangki.TabIndex = 25;
             this.btndangki.Text = "Đăng Kí";
             this.btndangki.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btndangki.Click += new System.EventHandler(this.btndangki_Click);
             // 
             // uiLabel5
             // 

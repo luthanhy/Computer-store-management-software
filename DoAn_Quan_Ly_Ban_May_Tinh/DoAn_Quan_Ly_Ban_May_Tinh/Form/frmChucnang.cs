@@ -350,5 +350,28 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         }
 
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
     }
 }

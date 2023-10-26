@@ -167,18 +167,18 @@
             this.loaiMatHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaycapnhapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hangHoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.chiTietHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soDienThoaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.maHHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maHDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soLuongDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mAChiTietHDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chiTietHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             uiGroupBox3 = new Sunny.UI.UIGroupBox();
             uiGroupBox2 = new Sunny.UI.UIGroupBox();
             uiGroupBox4 = new Sunny.UI.UIGroupBox();
@@ -1519,6 +1519,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1530, 731);
             this.panel4.TabIndex = 36;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // uiPanel4
             // 
@@ -2023,14 +2024,6 @@
             // 
             this.hangHoaBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.HangHoa);
             // 
-            // khachHangBindingSource
-            // 
-            this.khachHangBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.KhachHang);
-            // 
-            // chiTietHoaDonBindingSource
-            // 
-            this.chiTietHoaDonBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.ChiTietHoaDon);
-            // 
             // maKHDataGridViewTextBoxColumn
             // 
             this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
@@ -2066,6 +2059,10 @@
             this.diemDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.diemDataGridViewTextBoxColumn.Name = "diemDataGridViewTextBoxColumn";
             // 
+            // khachHangBindingSource
+            // 
+            this.khachHangBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.KhachHang);
+            // 
             // maHHDataGridViewTextBoxColumn
             // 
             this.maHHDataGridViewTextBoxColumn.DataPropertyName = "MaHH";
@@ -2100,6 +2097,10 @@
             this.mAChiTietHDDataGridViewTextBoxColumn.HeaderText = "MAChiTietHD";
             this.mAChiTietHDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.mAChiTietHDDataGridViewTextBoxColumn.Name = "mAChiTietHDDataGridViewTextBoxColumn";
+            // 
+            // chiTietHoaDonBindingSource
+            // 
+            this.chiTietHoaDonBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.ChiTietHoaDon);
             // 
             // frmChucnang
             // 
