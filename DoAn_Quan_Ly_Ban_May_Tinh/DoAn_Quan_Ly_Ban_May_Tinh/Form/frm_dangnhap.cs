@@ -23,12 +23,12 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
 
         }
-
+        private frmChucnang frm = new frmChucnang();
         private void frm_dangnhap_Load(object sender, EventArgs e)
         {
             CenterToScreen();
             txtmatkhau.PasswordChar = '*';
-
+            frm.Reset()
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

@@ -90,7 +90,14 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             menu.Visible = false;
 
         }
-
+        public void Reset()
+        {
+            bntthemsp.Visible = false;
+            formatdata.AddComboBoxLMH(txtlmh);
+            formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
+            formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
+            formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
+        }
         public void LoadButtonStart()
         {
             uiButton5.Enabled = false;
