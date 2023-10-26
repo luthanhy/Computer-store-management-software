@@ -32,7 +32,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         }
 
 
-      
+
 
         private void uiLabel3_Click(object sender, EventArgs e)
         {
@@ -43,7 +43,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         private void uiLabel2_Click(object sender, EventArgs e)
         {
 
-        }  
+        }
         private void uiLabel1_Click(object sender, EventArgs e)
         {
 
@@ -53,6 +53,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         private List<KhachHang> khachhanglist = new List<KhachHang>();
         private List<ChiTietHoaDon> chitiethoadonlist = new List<ChiTietHoaDon>();
         private List<Image> images = new List<Image>();
+        private bool IsFix;
         public frmChucnang()
         {
             InitializeComponent();
@@ -76,17 +77,26 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         private void frmChucnang_Load_2(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            //groupBox1.Visible = true;
-            //if (menu.Visible == true)
-            //{
-            //    bntthemsp.Visible = false;
-            //    formatdata.AddComboBoxLMH(txtlmh);
-            //    formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
-            //    formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
-            //    formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
-            //}
-            //menu.Visible = false;
+            LoadButtonStart();
+            groupBox1.Visible = true;
+            if (menu.Visible == true)
+            {
+                bntthemsp.Visible = false;
+                formatdata.AddComboBoxLMH(txtlmh);
+                formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
+                formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
+                formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
+            }
+            menu.Visible = false;
 
+        }
+
+        public void LoadButtonStart()
+        {
+            uiButton5.Enabled = false;
+            uiButton2.Enabled = true;
+            uiButton3.Enabled = true;
+            uiButton4.Enabled = true;
         }
         private void Load_Image()
         {
@@ -117,7 +127,8 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 txtncn.Text = selectrow.Cells[6].Value.ToString();
             }
         }
-        public void AddSaveFix(bool IsFix, bool IsAdd)
+        #region Add/Fix/Del
+        public void AddSaveFix(bool IsFix)
         {
             try
             {
@@ -125,19 +136,54 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 if (IsFix == true)
                 {
                     HangHoa edithanghoa = dBContext.HangHoas.Find(txt_masp.Text);
-                    if( edithanghoa == null ) {
-                        MessageBox.Show("Hang Hoa Da Ton Tai");
+                    if (edithanghoa == null)
+                    {
+                        MessageBox.Show("Mã Hàng Hóa Không Thể Sửa");
+                        LoadButtonStart();
                     }
                     else
                     {
                         edithanghoa.MaHang = txt_masp.Text;
                         edithanghoa.TenHang = txttensp.Text;
-                        //edithanghoa.LoaiHang = txt
+                        edithanghoa.LoaiHang = txtlmh.Text;
+                        edithanghoa.SoLuong = int.Parse(txtsl.Text);
+                        edithanghoa.GiaBan = double.Parse(txtgb.Text);
+                        edithanghoa.ngaycapnhap = DateTime.Parse(txtncn.Text);
+                        dBContext.Entry<HangHoa>(edithanghoa).State = System.Data.Entity.EntityState.Modified;
+                        dBContext.SaveChanges();
+                        MessageBox.Show("Sửa Thành Công ");
+                        formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
+                        LoadButtonStart();
                     }
                 }
                 else
                 {
 
+                    HangHoa AddFixHangHoa = dBContext.HangHoas.Find(txt_masp.Text);
+                    if (AddFixHangHoa != null)
+                    {
+                        MessageBox.Show("Hàng Hóa Đã Tồn Tại");
+                        LoadButtonStart();
+                    }
+
+                    else
+                    {
+                        HangHoa hanghoa = new HangHoa();
+                        hanghoa.MaHang = txt_masp.Text;
+                        hanghoa.TenHang = txttensp.Text;
+                        hanghoa.LoaiHang = txtlmh.Text;
+                        hanghoa.SoLuong = int.Parse(txtsl.Value.ToString());
+                        hanghoa.GiaBan = double.Parse(txtgb.Text);
+                        hanghoa.LoaiMatHang = txtlmh.Text;
+                        hanghoa.ngaycapnhap = DateTime.Parse(txtncn.Text);
+
+                        dBContext.HangHoas.Add(hanghoa);
+
+                        dBContext.SaveChanges();
+                        MessageBox.Show("Thêm Thành Công");
+                        formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
+                        LoadButtonStart();
+                    }
                 }
             }
             catch (Exception ex)
@@ -145,7 +191,60 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 MessageBox.Show(ex.Message);
             }
         }
+        private void uiButton4_Click(object sender, EventArgs e)
+        {
 
+            uiButton5.Enabled = true;
+            uiButton3.Enabled = false;
+            uiButton2.Enabled = false;
+            uiButton4.Enabled = false;
+            IsFix = false;
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            uiButton5.Enabled = true;
+            uiButton4.Enabled = false;
+            uiButton2.Enabled = false;
+            IsFix = true;
+        }
+        private void Delete_HangHoa()
+        {
+            DBContext dBContext = new DBContext();
+            var hanghoaDelete = dBContext.HangHoas.Find(txt_masp.Text);
+            if (hanghoaDelete != null)
+            {
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    dBContext.HangHoas.Remove(hanghoaDelete);
+                    dBContext.SaveChanges();
+                    formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
+                    LoadButtonStart();
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không Tìm Thấy Sinh Viên");
+            }
+        }
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            uiButton5.Enabled = true;
+            uiButton4.Enabled = false;
+            uiButton3.Enabled = false;
+            Delete_HangHoa();
+        }
+
+        private void uiButton5_Click(object sender, EventArgs e)
+        {
+            AddSaveFix(IsFix);
+        }
+        #endregion
         private void uiImageButton5_Click(object sender, EventArgs e)
         {
 
@@ -178,23 +277,6 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             menu.SelectTab(0);
             groupBox1.Visible = false;
         }
-        private void Scroll_Bar()
-            {
-            //uiHorScrollBarEx1.Value = uiFlowLayoutPanel1.VerticalScroll.Value;
-            // uiHorScrollBarEx1.MinimumSize = uiFlowLayoutPanel1.VerticalScroll.Minimum;
-           // uiFlowLayoutPanel1.ControlAdded += uiFlowLayoutPanel1_ControlAdded;
-            }
-
-        private void uiFlowLayoutPanel1_ControlAdded(object sender, ControlEventArgs e)
-        {
-
-            //uiHorScrollBarEx1.Maximum = uiFlowLayoutPanel1.VerticalScroll.Maximum;
-        }
-
-        private void uiHorScrollBarEx1_Click(object sender, EventArgs e)
-        {
-
-        }
         private void bntthemsp_Click(object sender, EventArgs e)
         {
             Button button = new Button();
@@ -204,13 +286,47 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             button.Image = DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._1;
             flowLayoutPanel1.Controls.Add(button);
         }
-        
+        private void bnt_search_Click(object sender, EventArgs e)
+        {
+            Search_SanPham();
+        }
+        //public void Search_SanPham()
+        //{
+        //    try
+        //    {
+        //        string masp_search = txt_search.Text;
+        //        var listsearch = formatdata.GetDataFormDB<HangHoa>().Where(s=>s.MaHang.Contains(masp_search,StringComparison.OrdinalIgnoreCase).ToList());
+        //    }catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //}
+
+        public void Search_SanPham()
+        {
+            try
+            {
+                string masp_search = txt_search.Text;
+                var listsearch = formatdata.GetDataFormDB<HangHoa>()
+                    .Where(s => s.MaHang.IndexOf(masp_search, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList(); // Materialize the results
+
+                // You can now use 'listsearch' to work with the filtered list of HangHoa items
+                uiDataGridView2.DataSource = null;
+                uiDataGridView2.DataSource = listsearch;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         #endregion
         private void btnhelp_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmtrogiup frmtg= new frmtrogiup();
-            frmtg.WindowState  = FormWindowState.Maximized;
+            frmtrogiup frmtg = new frmtrogiup();
+            frmtg.WindowState = FormWindowState.Maximized;
             frmtg.ShowDialog();
             this.Show();
         }
@@ -223,5 +339,16 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             frmtg.ShowDialog();
             this.Show();
         }
+
+        private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void uiButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
