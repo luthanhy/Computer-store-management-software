@@ -16,5 +16,21 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             InitializeComponent();
         }
+
+        private void frm_dangki_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
     }
 }

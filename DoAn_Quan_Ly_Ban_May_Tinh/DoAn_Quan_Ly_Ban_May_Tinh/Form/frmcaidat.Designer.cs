@@ -43,6 +43,7 @@
             this.btndangxuat.TabIndex = 0;
             this.btndangxuat.Text = "Đăng xuất";
             this.btndangxuat.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btndangxuat.Click += new System.EventHandler(this.btndangxuat_Click);
             // 
             // btnthoat
             // 
@@ -55,6 +56,7 @@
             this.btnthoat.TabIndex = 1;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // frmcaidat
             // 
