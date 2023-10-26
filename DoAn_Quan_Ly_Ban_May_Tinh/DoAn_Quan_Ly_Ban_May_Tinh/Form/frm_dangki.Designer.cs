@@ -60,7 +60,7 @@
             this.uiLabel1.ForeColor = System.Drawing.Color.Red;
             this.uiLabel1.Location = new System.Drawing.Point(235, 52);
             this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(329, 48);
+            this.uiLabel1.Size = new System.Drawing.Size(358, 48);
             this.uiLabel1.Style = Sunny.UI.UIStyle.Custom;
             this.uiLabel1.TabIndex = 0;
             this.uiLabel1.Text = "ĐĂNG KÍ TÀI KHOẢN";
@@ -152,7 +152,7 @@
             this.uiLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.uiLabel4.Location = new System.Drawing.Point(82, 393);
             this.uiLabel4.Name = "uiLabel4";
-            this.uiLabel4.Size = new System.Drawing.Size(197, 27);
+            this.uiLabel4.Size = new System.Drawing.Size(235, 27);
             this.uiLabel4.Style = Sunny.UI.UIStyle.Custom;
             this.uiLabel4.TabIndex = 24;
             this.uiLabel4.Text = "Xác Nhận Mật Khẩu";
@@ -184,11 +184,12 @@
             this.uiLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.uiLabel5.Location = new System.Drawing.Point(82, 158);
             this.uiLabel5.Name = "uiLabel5";
-            this.uiLabel5.Size = new System.Drawing.Size(180, 27);
+            this.uiLabel5.Size = new System.Drawing.Size(213, 27);
             this.uiLabel5.Style = Sunny.UI.UIStyle.Custom;
             this.uiLabel5.TabIndex = 27;
             this.uiLabel5.Text = "Tên Người Dùng";
             this.uiLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel5.Click += new System.EventHandler(this.uiLabel5_Click);
             // 
             // txttennguoidung
             // 

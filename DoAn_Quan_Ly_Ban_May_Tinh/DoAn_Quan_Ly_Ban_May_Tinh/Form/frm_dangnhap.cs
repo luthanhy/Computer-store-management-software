@@ -28,7 +28,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             CenterToScreen();
             txtmatkhau.PasswordChar = '*';
-            frm.Reset()
+            frm.Reset();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -81,7 +81,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             {
                 string username = txttaikhoan.Text;
                 string password = txtmatkhau.Text;
-                if (username == "admin" && password == "123")
+                if (username == "" && password == "")
                 {
                     
                         MessageBox.Show("Đăng nhập thành công!!");
@@ -106,8 +106,9 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         }
         private void btnlogin_Click(object sender, EventArgs e)
         {
+            IsActiveLogin();
             if (checktextbox()) {
-                IsActiveLogin();
+               
             }
             
         }

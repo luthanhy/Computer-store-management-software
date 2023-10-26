@@ -158,6 +158,7 @@
             this.uiLabel22 = new Sunny.UI.UILabel();
             this.uiButton1 = new Sunny.UI.UIButton();
             this.tabreport = new System.Windows.Forms.TabPage();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tabmanager = new System.Windows.Forms.TabPage();
             this.maHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -223,6 +224,7 @@
             this.tabtracuu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView3)).BeginInit();
             this.panel5.SuspendLayout();
+            this.tabreport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chiTietHoaDonBindingSource)).BeginInit();
@@ -916,13 +918,13 @@
             // 
             // btnhelp
             // 
-            this.btnhelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnhelp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnhelp.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnhelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnhelp.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.Tư_vấnnnnnnnnn;
-            this.btnhelp.Location = new System.Drawing.Point(1689, 0);
+            this.btnhelp.Location = new System.Drawing.Point(1591, 25);
             this.btnhelp.Name = "btnhelp";
-            this.btnhelp.Size = new System.Drawing.Size(42, 40);
+            this.btnhelp.Size = new System.Drawing.Size(46, 41);
             this.btnhelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnhelp.TabIndex = 7;
             this.btnhelp.TabStop = false;
@@ -932,11 +934,11 @@
             // 
             // btnsetting
             // 
-            this.btnsetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnsetting.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnsetting.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnsetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnsetting.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.Setting1;
-            this.btnsetting.Location = new System.Drawing.Point(1689, 46);
+            this.btnsetting.Location = new System.Drawing.Point(1677, 24);
             this.btnsetting.Name = "btnsetting";
             this.btnsetting.Size = new System.Drawing.Size(42, 40);
             this.btnsetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1073,7 +1075,7 @@
             this.btnproduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnproduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnproduct.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.product_design;
-            this.btnproduct.Location = new System.Drawing.Point(411, 14);
+            this.btnproduct.Location = new System.Drawing.Point(395, 15);
             this.btnproduct.Name = "btnproduct";
             this.btnproduct.Size = new System.Drawing.Size(57, 45);
             this.btnproduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1955,12 +1957,24 @@
             // 
             // tabreport
             // 
+            this.tabreport.Controls.Add(this.reportViewer1);
             this.tabreport.Location = new System.Drawing.Point(201, 0);
             this.tabreport.Name = "tabreport";
             this.tabreport.Size = new System.Drawing.Size(1530, 731);
             this.tabreport.TabIndex = 2;
             this.tabreport.Text = "Báo Cáo Thống Kê";
             this.tabreport.UseVisualStyleBackColor = true;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "DoAn_Quan_Ly_Ban_May_Tinh.frmreport.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(1530, 731);
+            this.reportViewer1.TabIndex = 0;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // tabmanager
             // 
@@ -2155,6 +2169,7 @@
             this.tabtracuu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView3)).EndInit();
             this.panel5.ResumeLayout(false);
+            this.tabreport.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chiTietHoaDonBindingSource)).EndInit();
@@ -2281,5 +2296,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuongDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn donGiaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mAChiTietHDDataGridViewTextBoxColumn;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

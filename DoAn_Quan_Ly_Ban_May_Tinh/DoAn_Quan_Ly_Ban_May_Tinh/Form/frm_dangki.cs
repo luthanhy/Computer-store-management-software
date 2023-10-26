@@ -79,5 +79,10 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 
             }
         }
+
+        private void uiLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

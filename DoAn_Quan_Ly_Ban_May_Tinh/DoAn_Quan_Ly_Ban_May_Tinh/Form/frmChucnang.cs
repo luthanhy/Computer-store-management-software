@@ -1,4 +1,6 @@
 ﻿using DoAn_Quan_Ly_Ban_May_Tinh.Script;
+using Microsoft.Reporting.WinForms;
+using Microsoft.ReportingServices.Diagnostics.Internal;
 using Sunny.UI;
 using System;
 using System.Collections.Generic;
@@ -76,6 +78,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         #region code
         private void frmChucnang_Load_2(object sender, EventArgs e)
         {
+            ReportProcess();
             this.WindowState = FormWindowState.Maximized;
             LoadButtonStart();
             groupBox1.Visible = true;
@@ -88,6 +91,19 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
             }
             menu.Visible = false;
+            
+            }
+        public void ReportProcess()
+        {
+            //DataSet dataSet = new DataSet();
+            ReportDataSource reportDataSource = new ReportDataSource("PhieuHoaDon", formatdata.GetDataFormDB<PhieuXuatHang>());
+            ReportDataSource reportDataSource2 = new ReportDataSource("KhachHang", formatdata.GetDataFormDB<KhachHang>());
+
+            reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
+            reportViewer1.LocalReport.ReportPath = @"C:\Users\thanh\OneDrive\Máy tính\Doan\DoAn_Quan_Ly_Ban_May_Tinh\DoAn_Quan_Ly_Ban_May_Tinh\frmreport.rdlc";
+            reportViewer1.LocalReport.DataSources.Add(reportDataSource);
+            reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.RefreshReport();
 
         }
         public void Reset()
@@ -379,6 +395,10 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
 
 
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
         }
     }
 }
