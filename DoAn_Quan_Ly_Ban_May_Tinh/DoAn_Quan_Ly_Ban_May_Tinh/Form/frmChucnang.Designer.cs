@@ -67,27 +67,10 @@
             this.uiButton3 = new Sunny.UI.UIButton();
             this.uiButton2 = new Sunny.UI.UIButton();
             this.uiDataGridView2 = new Sunny.UI.UIDataGridView();
-            this.maHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soLuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giaBanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiMatHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaycapnhapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chiTietHoaDonsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hangHoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uiPanel3 = new Sunny.UI.UIPanel();
             this.uiTextBox10 = new Sunny.UI.UITextBox();
             this.uiImageButton10 = new Sunny.UI.UIImageButton();
             this.uiDataGridView1 = new Sunny.UI.UIDataGridView();
-            this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soDienThoaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoaDonsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phieuXuatHangsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uiPanel5 = new Sunny.UI.UIPanel();
             this.uiDataGridView4 = new Sunny.UI.UIDataGridView();
             this.uiPanel7 = new Sunny.UI.UIPanel();
@@ -96,14 +79,6 @@
             this.btntimsp = new Sunny.UI.UIImageButton();
             this.txttimtheosp = new Sunny.UI.UITextBox();
             this.dgvHoaDon = new Sunny.UI.UIDataGridView();
-            this.maHHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maHDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soLuongDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mAChiTietHDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoaDonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chiTietHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uiPanel6 = new Sunny.UI.UIPanel();
             this.uiDataGridView5 = new Sunny.UI.UIDataGridView();
             this.uiPanel8 = new Sunny.UI.UIPanel();
@@ -112,7 +87,6 @@
             this.uiImageButton8 = new Sunny.UI.UIImageButton();
             this.txttimtheohd = new Sunny.UI.UITextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bntthemsp = new Sunny.UI.UIButton();
             this.btnhelp = new Sunny.UI.UIImageButton();
             this.btnsetting = new Sunny.UI.UIImageButton();
             this.uiLabel6 = new Sunny.UI.UILabel();
@@ -125,6 +99,7 @@
             this.btnpayment = new Sunny.UI.UIImageButton();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.btnproduct = new Sunny.UI.UIImageButton();
+            this.bntthemsp = new Sunny.UI.UIButton();
             this.uiTextBox4 = new Sunny.UI.UITextBox();
             this.uiTextBox3 = new Sunny.UI.UITextBox();
             this.uiTextBox2 = new Sunny.UI.UITextBox();
@@ -183,18 +158,40 @@
             this.uiButton1 = new Sunny.UI.UIButton();
             this.tabreport = new System.Windows.Forms.TabPage();
             this.tabmanager = new System.Windows.Forms.TabPage();
+            this.maHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaBanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiMatHangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaycapnhapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hangHoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soDienThoaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoaDonsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phieuXuatHangsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.maHHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maHDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuongDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mAChiTietHDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoaDonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hangHoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chiTietHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             uiGroupBox3 = new Sunny.UI.UIGroupBox();
             uiGroupBox2 = new Sunny.UI.UIGroupBox();
             uiGroupBox4 = new Sunny.UI.UIGroupBox();
             uiGroupBox3.SuspendLayout();
             this.uiPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).BeginInit();
             this.uiPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton10)).BeginInit();
             uiGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             this.uiPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView4)).BeginInit();
             this.uiPanel7.SuspendLayout();
@@ -202,7 +199,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btntimsp)).BeginInit();
             uiGroupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chiTietHoaDonBindingSource)).BeginInit();
             this.uiPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView5)).BeginInit();
             this.uiPanel8.SuspendLayout();
@@ -230,6 +226,9 @@
             this.tabtracuu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView3)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chiTietHoaDonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // uiGroupBox3
@@ -244,7 +243,7 @@
             uiGroupBox3.MinimumSize = new System.Drawing.Size(1, 1);
             uiGroupBox3.Name = "uiGroupBox3";
             uiGroupBox3.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            uiGroupBox3.Size = new System.Drawing.Size(1262, 491);
+            uiGroupBox3.Size = new System.Drawing.Size(1453, 491);
             uiGroupBox3.TabIndex = 28;
             uiGroupBox3.Text = "Thông Tin Sản Phẩm";
             uiGroupBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -260,7 +259,7 @@
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(1262, 168);
+            this.uiPanel1.Size = new System.Drawing.Size(1453, 168);
             this.uiPanel1.TabIndex = 49;
             this.uiPanel1.Text = null;
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -270,7 +269,7 @@
             this.uiButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiButton4.Location = new System.Drawing.Point(413, 80);
+            this.uiButton4.Location = new System.Drawing.Point(508, 80);
             this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton4.Name = "uiButton4";
             this.uiButton4.Size = new System.Drawing.Size(100, 35);
@@ -283,7 +282,7 @@
             this.uiButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiButton3.Location = new System.Drawing.Point(552, 80);
+            this.uiButton3.Location = new System.Drawing.Point(647, 80);
             this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton3.Name = "uiButton3";
             this.uiButton3.Size = new System.Drawing.Size(100, 35);
@@ -296,7 +295,7 @@
             this.uiButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiButton2.Location = new System.Drawing.Point(694, 80);
+            this.uiButton2.Location = new System.Drawing.Point(789, 80);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.Size = new System.Drawing.Size(100, 35);
@@ -329,8 +328,7 @@
             this.soLuongDataGridViewTextBoxColumn,
             this.giaBanDataGridViewTextBoxColumn,
             this.loaiMatHangDataGridViewTextBoxColumn,
-            this.ngaycapnhapDataGridViewTextBoxColumn,
-            this.chiTietHoaDonsDataGridViewTextBoxColumn});
+            this.ngaycapnhapDataGridViewTextBoxColumn});
             this.uiDataGridView2.DataSource = this.hangHoaBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -364,70 +362,9 @@
             this.uiDataGridView2.RowTemplate.Height = 24;
             this.uiDataGridView2.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             this.uiDataGridView2.SelectedIndex = -1;
-            this.uiDataGridView2.Size = new System.Drawing.Size(1262, 421);
+            this.uiDataGridView2.Size = new System.Drawing.Size(1453, 421);
             this.uiDataGridView2.TabIndex = 27;
             this.uiDataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.uiDataGridView2_CellClick_1);
-            this.uiDataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.uiDataGridView2_CellContentClick_1);
-            // 
-            // maHangDataGridViewTextBoxColumn
-            // 
-            this.maHangDataGridViewTextBoxColumn.DataPropertyName = "MaHang";
-            this.maHangDataGridViewTextBoxColumn.HeaderText = "MaHang";
-            this.maHangDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.maHangDataGridViewTextBoxColumn.Name = "maHangDataGridViewTextBoxColumn";
-            // 
-            // tenHangDataGridViewTextBoxColumn
-            // 
-            this.tenHangDataGridViewTextBoxColumn.DataPropertyName = "TenHang";
-            this.tenHangDataGridViewTextBoxColumn.HeaderText = "TenHang";
-            this.tenHangDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tenHangDataGridViewTextBoxColumn.Name = "tenHangDataGridViewTextBoxColumn";
-            // 
-            // loaiHangDataGridViewTextBoxColumn
-            // 
-            this.loaiHangDataGridViewTextBoxColumn.DataPropertyName = "LoaiHang";
-            this.loaiHangDataGridViewTextBoxColumn.HeaderText = "LoaiHang";
-            this.loaiHangDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.loaiHangDataGridViewTextBoxColumn.Name = "loaiHangDataGridViewTextBoxColumn";
-            // 
-            // soLuongDataGridViewTextBoxColumn
-            // 
-            this.soLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong";
-            this.soLuongDataGridViewTextBoxColumn.HeaderText = "SoLuong";
-            this.soLuongDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.soLuongDataGridViewTextBoxColumn.Name = "soLuongDataGridViewTextBoxColumn";
-            // 
-            // giaBanDataGridViewTextBoxColumn
-            // 
-            this.giaBanDataGridViewTextBoxColumn.DataPropertyName = "GiaBan";
-            this.giaBanDataGridViewTextBoxColumn.HeaderText = "GiaBan";
-            this.giaBanDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.giaBanDataGridViewTextBoxColumn.Name = "giaBanDataGridViewTextBoxColumn";
-            // 
-            // loaiMatHangDataGridViewTextBoxColumn
-            // 
-            this.loaiMatHangDataGridViewTextBoxColumn.DataPropertyName = "LoaiMatHang";
-            this.loaiMatHangDataGridViewTextBoxColumn.HeaderText = "LoaiMatHang";
-            this.loaiMatHangDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.loaiMatHangDataGridViewTextBoxColumn.Name = "loaiMatHangDataGridViewTextBoxColumn";
-            // 
-            // ngaycapnhapDataGridViewTextBoxColumn
-            // 
-            this.ngaycapnhapDataGridViewTextBoxColumn.DataPropertyName = "ngaycapnhap";
-            this.ngaycapnhapDataGridViewTextBoxColumn.HeaderText = "ngaycapnhap";
-            this.ngaycapnhapDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ngaycapnhapDataGridViewTextBoxColumn.Name = "ngaycapnhapDataGridViewTextBoxColumn";
-            // 
-            // chiTietHoaDonsDataGridViewTextBoxColumn
-            // 
-            this.chiTietHoaDonsDataGridViewTextBoxColumn.DataPropertyName = "ChiTietHoaDons";
-            this.chiTietHoaDonsDataGridViewTextBoxColumn.HeaderText = "ChiTietHoaDons";
-            this.chiTietHoaDonsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.chiTietHoaDonsDataGridViewTextBoxColumn.Name = "chiTietHoaDonsDataGridViewTextBoxColumn";
-            // 
-            // hangHoaBindingSource
-            // 
-            this.hangHoaBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.HangHoa);
             // 
             // uiPanel3
             // 
@@ -439,7 +376,7 @@
             this.uiPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel3.Name = "uiPanel3";
-            this.uiPanel3.Size = new System.Drawing.Size(1262, 38);
+            this.uiPanel3.Size = new System.Drawing.Size(1453, 38);
             this.uiPanel3.TabIndex = 0;
             this.uiPanel3.Text = null;
             this.uiPanel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -450,7 +387,7 @@
             this.uiTextBox10.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.uiTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiTextBox10.Location = new System.Drawing.Point(836, 5);
+            this.uiTextBox10.Location = new System.Drawing.Point(931, 5);
             this.uiTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox10.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox10.Name = "uiTextBox10";
@@ -467,7 +404,7 @@
             this.uiImageButton10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.uiImageButton10.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.search1;
-            this.uiImageButton10.Location = new System.Drawing.Point(1073, 4);
+            this.uiImageButton10.Location = new System.Drawing.Point(1168, 4);
             this.uiImageButton10.Name = "uiImageButton10";
             this.uiImageButton10.Size = new System.Drawing.Size(45, 30);
             this.uiImageButton10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -526,7 +463,7 @@
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -558,59 +495,6 @@
             this.uiDataGridView1.Size = new System.Drawing.Size(1274, 139);
             this.uiDataGridView1.Style = Sunny.UI.UIStyle.Custom;
             this.uiDataGridView1.TabIndex = 27;
-            // 
-            // maKHDataGridViewTextBoxColumn
-            // 
-            this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
-            this.maKHDataGridViewTextBoxColumn.HeaderText = "MaKH";
-            this.maKHDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
-            // 
-            // tenKHDataGridViewTextBoxColumn
-            // 
-            this.tenKHDataGridViewTextBoxColumn.DataPropertyName = "TenKH";
-            this.tenKHDataGridViewTextBoxColumn.HeaderText = "TenKH";
-            this.tenKHDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tenKHDataGridViewTextBoxColumn.Name = "tenKHDataGridViewTextBoxColumn";
-            // 
-            // diaChiDataGridViewTextBoxColumn
-            // 
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
-            // 
-            // soDienThoaiDataGridViewTextBoxColumn
-            // 
-            this.soDienThoaiDataGridViewTextBoxColumn.DataPropertyName = "SoDienThoai";
-            this.soDienThoaiDataGridViewTextBoxColumn.HeaderText = "SoDienThoai";
-            this.soDienThoaiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.soDienThoaiDataGridViewTextBoxColumn.Name = "soDienThoaiDataGridViewTextBoxColumn";
-            // 
-            // diemDataGridViewTextBoxColumn
-            // 
-            this.diemDataGridViewTextBoxColumn.DataPropertyName = "Diem";
-            this.diemDataGridViewTextBoxColumn.HeaderText = "Diem";
-            this.diemDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.diemDataGridViewTextBoxColumn.Name = "diemDataGridViewTextBoxColumn";
-            // 
-            // hoaDonsDataGridViewTextBoxColumn
-            // 
-            this.hoaDonsDataGridViewTextBoxColumn.DataPropertyName = "HoaDons";
-            this.hoaDonsDataGridViewTextBoxColumn.HeaderText = "HoaDons";
-            this.hoaDonsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hoaDonsDataGridViewTextBoxColumn.Name = "hoaDonsDataGridViewTextBoxColumn";
-            // 
-            // phieuXuatHangsDataGridViewTextBoxColumn
-            // 
-            this.phieuXuatHangsDataGridViewTextBoxColumn.DataPropertyName = "PhieuXuatHangs";
-            this.phieuXuatHangsDataGridViewTextBoxColumn.HeaderText = "PhieuXuatHangs";
-            this.phieuXuatHangsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phieuXuatHangsDataGridViewTextBoxColumn.Name = "phieuXuatHangsDataGridViewTextBoxColumn";
-            // 
-            // khachHangBindingSource
-            // 
-            this.khachHangBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.KhachHang);
             // 
             // uiPanel5
             // 
@@ -813,7 +697,7 @@
             dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -845,60 +729,6 @@
             this.dgvHoaDon.Size = new System.Drawing.Size(1268, 171);
             this.dgvHoaDon.Style = Sunny.UI.UIStyle.Custom;
             this.dgvHoaDon.TabIndex = 27;
-            this.dgvHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellContentClick_1);
-            // 
-            // maHHDataGridViewTextBoxColumn
-            // 
-            this.maHHDataGridViewTextBoxColumn.DataPropertyName = "MaHH";
-            this.maHHDataGridViewTextBoxColumn.HeaderText = "MaHH";
-            this.maHHDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.maHHDataGridViewTextBoxColumn.Name = "maHHDataGridViewTextBoxColumn";
-            // 
-            // maHDDataGridViewTextBoxColumn
-            // 
-            this.maHDDataGridViewTextBoxColumn.DataPropertyName = "MaHD";
-            this.maHDDataGridViewTextBoxColumn.HeaderText = "MaHD";
-            this.maHDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.maHDDataGridViewTextBoxColumn.Name = "maHDDataGridViewTextBoxColumn";
-            // 
-            // soLuongDataGridViewTextBoxColumn1
-            // 
-            this.soLuongDataGridViewTextBoxColumn1.DataPropertyName = "SoLuong";
-            this.soLuongDataGridViewTextBoxColumn1.HeaderText = "SoLuong";
-            this.soLuongDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.soLuongDataGridViewTextBoxColumn1.Name = "soLuongDataGridViewTextBoxColumn1";
-            // 
-            // donGiaDataGridViewTextBoxColumn
-            // 
-            this.donGiaDataGridViewTextBoxColumn.DataPropertyName = "DonGia";
-            this.donGiaDataGridViewTextBoxColumn.HeaderText = "DonGia";
-            this.donGiaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.donGiaDataGridViewTextBoxColumn.Name = "donGiaDataGridViewTextBoxColumn";
-            // 
-            // mAChiTietHDDataGridViewTextBoxColumn
-            // 
-            this.mAChiTietHDDataGridViewTextBoxColumn.DataPropertyName = "MAChiTietHD";
-            this.mAChiTietHDDataGridViewTextBoxColumn.HeaderText = "MAChiTietHD";
-            this.mAChiTietHDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.mAChiTietHDDataGridViewTextBoxColumn.Name = "mAChiTietHDDataGridViewTextBoxColumn";
-            // 
-            // hoaDonDataGridViewTextBoxColumn
-            // 
-            this.hoaDonDataGridViewTextBoxColumn.DataPropertyName = "HoaDon";
-            this.hoaDonDataGridViewTextBoxColumn.HeaderText = "HoaDon";
-            this.hoaDonDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hoaDonDataGridViewTextBoxColumn.Name = "hoaDonDataGridViewTextBoxColumn";
-            // 
-            // hangHoaDataGridViewTextBoxColumn
-            // 
-            this.hangHoaDataGridViewTextBoxColumn.DataPropertyName = "HangHoa";
-            this.hangHoaDataGridViewTextBoxColumn.HeaderText = "HangHoa";
-            this.hangHoaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hangHoaDataGridViewTextBoxColumn.Name = "hangHoaDataGridViewTextBoxColumn";
-            // 
-            // chiTietHoaDonBindingSource
-            // 
-            this.chiTietHoaDonBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.ChiTietHoaDon);
             // 
             // uiPanel6
             // 
@@ -1055,7 +885,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Controls.Add(this.bntthemsp);
             this.panel1.Controls.Add(this.btnhelp);
             this.panel1.Controls.Add(this.btnsetting);
             this.panel1.Controls.Add(this.uiLabel6);
@@ -1074,19 +903,6 @@
             this.panel1.Size = new System.Drawing.Size(1654, 117);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // bntthemsp
-            // 
-            this.bntthemsp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bntthemsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.bntthemsp.Location = new System.Drawing.Point(12, 74);
-            this.bntthemsp.MinimumSize = new System.Drawing.Size(1, 1);
-            this.bntthemsp.Name = "bntthemsp";
-            this.bntthemsp.Size = new System.Drawing.Size(100, 35);
-            this.bntthemsp.TabIndex = 8;
-            this.bntthemsp.Text = "uiButton1";
-            this.bntthemsp.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.bntthemsp.Click += new System.EventHandler(this.bntthemsp_Click);
             // 
             // btnhelp
             // 
@@ -1253,6 +1069,20 @@
             this.btnproduct.ZoomScaleDisabled = true;
             this.btnproduct.Click += new System.EventHandler(this.uiImageButton1_Click);
             // 
+            // bntthemsp
+            // 
+            this.bntthemsp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bntthemsp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bntthemsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.bntthemsp.Location = new System.Drawing.Point(1520, 0);
+            this.bntthemsp.MinimumSize = new System.Drawing.Size(1, 1);
+            this.bntthemsp.Name = "bntthemsp";
+            this.bntthemsp.Size = new System.Drawing.Size(100, 35);
+            this.bntthemsp.TabIndex = 8;
+            this.bntthemsp.Text = "uiButton1";
+            this.bntthemsp.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.bntthemsp.Click += new System.EventHandler(this.bntthemsp_Click);
+            // 
             // uiTextBox4
             // 
             this.uiTextBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -1357,6 +1187,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.bntthemsp);
             this.groupBox1.Controls.Add(this.flowLayoutPanel1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 117);
@@ -1392,7 +1223,7 @@
             this.menu.SelectedIndex = 0;
             this.menu.Size = new System.Drawing.Size(1654, 704);
             this.menu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.menu.TabIndex = 11;
+            this.menu.TabIndex = 13;
             // 
             // tabthemsp
             // 
@@ -1401,7 +1232,7 @@
             this.tabthemsp.Controls.Add(this.uiImageButton9);
             this.tabthemsp.Location = new System.Drawing.Point(201, 0);
             this.tabthemsp.Name = "tabthemsp";
-            this.tabthemsp.Size = new System.Drawing.Size(1262, 704);
+            this.tabthemsp.Size = new System.Drawing.Size(1453, 704);
             this.tabthemsp.TabIndex = 4;
             this.tabthemsp.Text = "Thêm Sản Phẩm";
             this.tabthemsp.UseVisualStyleBackColor = true;
@@ -1415,7 +1246,7 @@
             this.uiPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel2.Name = "uiPanel2";
-            this.uiPanel2.Size = new System.Drawing.Size(1262, 491);
+            this.uiPanel2.Size = new System.Drawing.Size(1453, 491);
             this.uiPanel2.TabIndex = 55;
             this.uiPanel2.Text = null;
             this.uiPanel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1437,7 +1268,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1262, 213);
+            this.panel2.Size = new System.Drawing.Size(1453, 213);
             this.panel2.TabIndex = 54;
             // 
             // txtncn
@@ -1445,7 +1276,7 @@
             this.txtncn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtncn.FillColor = System.Drawing.Color.White;
             this.txtncn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtncn.Location = new System.Drawing.Point(350, 148);
+            this.txtncn.Location = new System.Drawing.Point(445, 148);
             this.txtncn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtncn.MaxLength = 10;
             this.txtncn.MinimumSize = new System.Drawing.Size(63, 0);
@@ -1469,7 +1300,7 @@
             this.txtlmh.DataSource = null;
             this.txtlmh.FillColor = System.Drawing.Color.White;
             this.txtlmh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtlmh.Location = new System.Drawing.Point(879, 148);
+            this.txtlmh.Location = new System.Drawing.Point(974, 148);
             this.txtlmh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtlmh.MinimumSize = new System.Drawing.Size(63, 0);
             this.txtlmh.Name = "txtlmh";
@@ -1499,7 +1330,7 @@
             this.txtgb.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txtgb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtgb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtgb.Location = new System.Drawing.Point(879, 89);
+            this.txtgb.Location = new System.Drawing.Point(974, 89);
             this.txtgb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtgb.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtgb.Name = "txtgb";
@@ -1516,7 +1347,7 @@
             this.txttensp.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txttensp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txttensp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txttensp.Location = new System.Drawing.Point(350, 89);
+            this.txttensp.Location = new System.Drawing.Point(445, 89);
             this.txttensp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txttensp.MinimumSize = new System.Drawing.Size(1, 16);
             this.txttensp.Name = "txttensp";
@@ -1533,7 +1364,7 @@
             this.txt_masp.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txt_masp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_masp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_masp.Location = new System.Drawing.Point(350, 35);
+            this.txt_masp.Location = new System.Drawing.Point(445, 35);
             this.txt_masp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_masp.MinimumSize = new System.Drawing.Size(1, 16);
             this.txt_masp.Name = "txt_masp";
@@ -1548,7 +1379,7 @@
             // 
             this.uiLabel21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel21.Location = new System.Drawing.Point(719, 148);
+            this.uiLabel21.Location = new System.Drawing.Point(814, 148);
             this.uiLabel21.Name = "uiLabel21";
             this.uiLabel21.Size = new System.Drawing.Size(141, 29);
             this.uiLabel21.Style = Sunny.UI.UIStyle.Custom;
@@ -1559,7 +1390,7 @@
             // txtsl
             // 
             this.txtsl.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtsl.Location = new System.Drawing.Point(879, 35);
+            this.txtsl.Location = new System.Drawing.Point(974, 35);
             this.txtsl.Name = "txtsl";
             this.txtsl.Size = new System.Drawing.Size(233, 30);
             this.txtsl.TabIndex = 75;
@@ -1568,7 +1399,7 @@
             // 
             this.uiLabel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel15.Location = new System.Drawing.Point(719, 35);
+            this.uiLabel15.Location = new System.Drawing.Point(814, 35);
             this.uiLabel15.Name = "uiLabel15";
             this.uiLabel15.Size = new System.Drawing.Size(100, 30);
             this.uiLabel15.Style = Sunny.UI.UIStyle.Custom;
@@ -1580,7 +1411,7 @@
             // 
             this.uiLabel16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel16.Location = new System.Drawing.Point(719, 96);
+            this.uiLabel16.Location = new System.Drawing.Point(814, 96);
             this.uiLabel16.Name = "uiLabel16";
             this.uiLabel16.Size = new System.Drawing.Size(100, 23);
             this.uiLabel16.Style = Sunny.UI.UIStyle.Custom;
@@ -1592,7 +1423,7 @@
             // 
             this.uiLabel20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel20.Location = new System.Drawing.Point(151, 148);
+            this.uiLabel20.Location = new System.Drawing.Point(246, 148);
             this.uiLabel20.Name = "uiLabel20";
             this.uiLabel20.Size = new System.Drawing.Size(158, 29);
             this.uiLabel20.Style = Sunny.UI.UIStyle.Custom;
@@ -1604,7 +1435,7 @@
             // 
             this.uiLabel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel18.Location = new System.Drawing.Point(151, 96);
+            this.uiLabel18.Location = new System.Drawing.Point(246, 96);
             this.uiLabel18.Name = "uiLabel18";
             this.uiLabel18.Size = new System.Drawing.Size(146, 23);
             this.uiLabel18.Style = Sunny.UI.UIStyle.Custom;
@@ -1616,7 +1447,7 @@
             // 
             this.uiLabel19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel19.Location = new System.Drawing.Point(151, 42);
+            this.uiLabel19.Location = new System.Drawing.Point(246, 42);
             this.uiLabel19.Name = "uiLabel19";
             this.uiLabel19.Size = new System.Drawing.Size(146, 23);
             this.uiLabel19.Style = Sunny.UI.UIStyle.Custom;
@@ -1967,7 +1798,7 @@
             this.tabtracuu.Controls.Add(this.panel5);
             this.tabtracuu.Location = new System.Drawing.Point(201, 0);
             this.tabtracuu.Name = "tabtracuu";
-            this.tabtracuu.Size = new System.Drawing.Size(1262, 704);
+            this.tabtracuu.Size = new System.Drawing.Size(1453, 704);
             this.tabtracuu.TabIndex = 1;
             this.tabtracuu.Text = "Tra Cứu Hóa Đơn";
             this.tabtracuu.UseVisualStyleBackColor = true;
@@ -2016,7 +1847,7 @@
             this.uiDataGridView3.RowTemplate.Height = 24;
             this.uiDataGridView3.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             this.uiDataGridView3.SelectedIndex = -1;
-            this.uiDataGridView3.Size = new System.Drawing.Size(1262, 604);
+            this.uiDataGridView3.Size = new System.Drawing.Size(1453, 604);
             this.uiDataGridView3.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.uiDataGridView3.Style = Sunny.UI.UIStyle.Custom;
             this.uiDataGridView3.TabIndex = 3;
@@ -2032,7 +1863,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1262, 100);
+            this.panel5.Size = new System.Drawing.Size(1453, 100);
             this.panel5.TabIndex = 4;
             // 
             // uiDatetimePicker3
@@ -2111,7 +1942,7 @@
             // 
             this.tabreport.Location = new System.Drawing.Point(201, 0);
             this.tabreport.Name = "tabreport";
-            this.tabreport.Size = new System.Drawing.Size(1262, 704);
+            this.tabreport.Size = new System.Drawing.Size(1453, 704);
             this.tabreport.TabIndex = 2;
             this.tabreport.Text = "Báo Cáo Thống Kê";
             this.tabreport.UseVisualStyleBackColor = true;
@@ -2120,10 +1951,169 @@
             // 
             this.tabmanager.Location = new System.Drawing.Point(201, 0);
             this.tabmanager.Name = "tabmanager";
-            this.tabmanager.Size = new System.Drawing.Size(1262, 704);
+            this.tabmanager.Size = new System.Drawing.Size(1453, 704);
             this.tabmanager.TabIndex = 3;
             this.tabmanager.Text = "Quản Lý Sales";
             this.tabmanager.UseVisualStyleBackColor = true;
+            // 
+            // maHangDataGridViewTextBoxColumn
+            // 
+            this.maHangDataGridViewTextBoxColumn.DataPropertyName = "MaHang";
+            this.maHangDataGridViewTextBoxColumn.HeaderText = "MaHang";
+            this.maHangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maHangDataGridViewTextBoxColumn.Name = "maHangDataGridViewTextBoxColumn";
+            // 
+            // tenHangDataGridViewTextBoxColumn
+            // 
+            this.tenHangDataGridViewTextBoxColumn.DataPropertyName = "TenHang";
+            this.tenHangDataGridViewTextBoxColumn.HeaderText = "TenHang";
+            this.tenHangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenHangDataGridViewTextBoxColumn.Name = "tenHangDataGridViewTextBoxColumn";
+            // 
+            // loaiHangDataGridViewTextBoxColumn
+            // 
+            this.loaiHangDataGridViewTextBoxColumn.DataPropertyName = "LoaiHang";
+            this.loaiHangDataGridViewTextBoxColumn.HeaderText = "LoaiHang";
+            this.loaiHangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.loaiHangDataGridViewTextBoxColumn.Name = "loaiHangDataGridViewTextBoxColumn";
+            // 
+            // soLuongDataGridViewTextBoxColumn
+            // 
+            this.soLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn.HeaderText = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soLuongDataGridViewTextBoxColumn.Name = "soLuongDataGridViewTextBoxColumn";
+            // 
+            // giaBanDataGridViewTextBoxColumn
+            // 
+            this.giaBanDataGridViewTextBoxColumn.DataPropertyName = "GiaBan";
+            this.giaBanDataGridViewTextBoxColumn.HeaderText = "GiaBan";
+            this.giaBanDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.giaBanDataGridViewTextBoxColumn.Name = "giaBanDataGridViewTextBoxColumn";
+            // 
+            // loaiMatHangDataGridViewTextBoxColumn
+            // 
+            this.loaiMatHangDataGridViewTextBoxColumn.DataPropertyName = "LoaiMatHang";
+            this.loaiMatHangDataGridViewTextBoxColumn.HeaderText = "LoaiMatHang";
+            this.loaiMatHangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.loaiMatHangDataGridViewTextBoxColumn.Name = "loaiMatHangDataGridViewTextBoxColumn";
+            // 
+            // ngaycapnhapDataGridViewTextBoxColumn
+            // 
+            this.ngaycapnhapDataGridViewTextBoxColumn.DataPropertyName = "ngaycapnhap";
+            this.ngaycapnhapDataGridViewTextBoxColumn.HeaderText = "ngaycapnhap";
+            this.ngaycapnhapDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ngaycapnhapDataGridViewTextBoxColumn.Name = "ngaycapnhapDataGridViewTextBoxColumn";
+            // 
+            // hangHoaBindingSource
+            // 
+            this.hangHoaBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.HangHoa);
+            // 
+            // maKHDataGridViewTextBoxColumn
+            // 
+            this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
+            this.maKHDataGridViewTextBoxColumn.HeaderText = "MaKH";
+            this.maKHDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
+            // 
+            // tenKHDataGridViewTextBoxColumn
+            // 
+            this.tenKHDataGridViewTextBoxColumn.DataPropertyName = "TenKH";
+            this.tenKHDataGridViewTextBoxColumn.HeaderText = "TenKH";
+            this.tenKHDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenKHDataGridViewTextBoxColumn.Name = "tenKHDataGridViewTextBoxColumn";
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            // 
+            // soDienThoaiDataGridViewTextBoxColumn
+            // 
+            this.soDienThoaiDataGridViewTextBoxColumn.DataPropertyName = "SoDienThoai";
+            this.soDienThoaiDataGridViewTextBoxColumn.HeaderText = "SoDienThoai";
+            this.soDienThoaiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soDienThoaiDataGridViewTextBoxColumn.Name = "soDienThoaiDataGridViewTextBoxColumn";
+            // 
+            // diemDataGridViewTextBoxColumn
+            // 
+            this.diemDataGridViewTextBoxColumn.DataPropertyName = "Diem";
+            this.diemDataGridViewTextBoxColumn.HeaderText = "Diem";
+            this.diemDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.diemDataGridViewTextBoxColumn.Name = "diemDataGridViewTextBoxColumn";
+            // 
+            // hoaDonsDataGridViewTextBoxColumn
+            // 
+            this.hoaDonsDataGridViewTextBoxColumn.DataPropertyName = "HoaDons";
+            this.hoaDonsDataGridViewTextBoxColumn.HeaderText = "HoaDons";
+            this.hoaDonsDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hoaDonsDataGridViewTextBoxColumn.Name = "hoaDonsDataGridViewTextBoxColumn";
+            // 
+            // phieuXuatHangsDataGridViewTextBoxColumn
+            // 
+            this.phieuXuatHangsDataGridViewTextBoxColumn.DataPropertyName = "PhieuXuatHangs";
+            this.phieuXuatHangsDataGridViewTextBoxColumn.HeaderText = "PhieuXuatHangs";
+            this.phieuXuatHangsDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.phieuXuatHangsDataGridViewTextBoxColumn.Name = "phieuXuatHangsDataGridViewTextBoxColumn";
+            // 
+            // khachHangBindingSource
+            // 
+            this.khachHangBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.KhachHang);
+            // 
+            // maHHDataGridViewTextBoxColumn
+            // 
+            this.maHHDataGridViewTextBoxColumn.DataPropertyName = "MaHH";
+            this.maHHDataGridViewTextBoxColumn.HeaderText = "MaHH";
+            this.maHHDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maHHDataGridViewTextBoxColumn.Name = "maHHDataGridViewTextBoxColumn";
+            // 
+            // maHDDataGridViewTextBoxColumn
+            // 
+            this.maHDDataGridViewTextBoxColumn.DataPropertyName = "MaHD";
+            this.maHDDataGridViewTextBoxColumn.HeaderText = "MaHD";
+            this.maHDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maHDDataGridViewTextBoxColumn.Name = "maHDDataGridViewTextBoxColumn";
+            // 
+            // soLuongDataGridViewTextBoxColumn1
+            // 
+            this.soLuongDataGridViewTextBoxColumn1.DataPropertyName = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn1.HeaderText = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.soLuongDataGridViewTextBoxColumn1.Name = "soLuongDataGridViewTextBoxColumn1";
+            // 
+            // donGiaDataGridViewTextBoxColumn
+            // 
+            this.donGiaDataGridViewTextBoxColumn.DataPropertyName = "DonGia";
+            this.donGiaDataGridViewTextBoxColumn.HeaderText = "DonGia";
+            this.donGiaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.donGiaDataGridViewTextBoxColumn.Name = "donGiaDataGridViewTextBoxColumn";
+            // 
+            // mAChiTietHDDataGridViewTextBoxColumn
+            // 
+            this.mAChiTietHDDataGridViewTextBoxColumn.DataPropertyName = "MAChiTietHD";
+            this.mAChiTietHDDataGridViewTextBoxColumn.HeaderText = "MAChiTietHD";
+            this.mAChiTietHDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.mAChiTietHDDataGridViewTextBoxColumn.Name = "mAChiTietHDDataGridViewTextBoxColumn";
+            // 
+            // hoaDonDataGridViewTextBoxColumn
+            // 
+            this.hoaDonDataGridViewTextBoxColumn.DataPropertyName = "HoaDon";
+            this.hoaDonDataGridViewTextBoxColumn.HeaderText = "HoaDon";
+            this.hoaDonDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hoaDonDataGridViewTextBoxColumn.Name = "hoaDonDataGridViewTextBoxColumn";
+            // 
+            // hangHoaDataGridViewTextBoxColumn
+            // 
+            this.hangHoaDataGridViewTextBoxColumn.DataPropertyName = "HangHoa";
+            this.hangHoaDataGridViewTextBoxColumn.HeaderText = "HangHoa";
+            this.hangHoaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hangHoaDataGridViewTextBoxColumn.Name = "hangHoaDataGridViewTextBoxColumn";
+            // 
+            // chiTietHoaDonBindingSource
+            // 
+            this.chiTietHoaDonBindingSource.DataSource = typeof(DoAn_Quan_Ly_Ban_May_Tinh.ChiTietHoaDon);
             // 
             // frmChucnang
             // 
@@ -2136,16 +2126,14 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmChucnang";
             this.Text = "frmChucnang";
-            this.Load += new System.EventHandler(this.frmChucnang_Load);
+            this.Load += new System.EventHandler(this.frmChucnang_Load_2);
             uiGroupBox3.ResumeLayout(false);
             this.uiPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).EndInit();
             this.uiPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton10)).EndInit();
             uiGroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
             this.uiPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView4)).EndInit();
             this.uiPanel7.ResumeLayout(false);
@@ -2153,7 +2141,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btntimsp)).EndInit();
             uiGroupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chiTietHoaDonBindingSource)).EndInit();
             this.uiPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView5)).EndInit();
             this.uiPanel8.ResumeLayout(false);
@@ -2181,6 +2168,9 @@
             this.tabtracuu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView3)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hangHoaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chiTietHoaDonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2209,6 +2199,9 @@
         private Sunny.UI.UIButton bntthemsp;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.BindingSource hangHoaBindingSource;
+        private System.Windows.Forms.BindingSource khachHangBindingSource;
+        private System.Windows.Forms.BindingSource chiTietHoaDonBindingSource;
         private Sunny.UI.UITabControlMenu menu;
         private System.Windows.Forms.TabPage tabthemsp;
         private Sunny.UI.UIPanel uiPanel2;
@@ -2220,12 +2213,37 @@
         private Sunny.UI.UIPanel uiPanel3;
         private Sunny.UI.UITextBox uiTextBox10;
         private Sunny.UI.UIImageButton uiImageButton10;
+        private System.Windows.Forms.Panel panel2;
+        private Sunny.UI.UIDatePicker txtncn;
+        private Sunny.UI.UIComboBox txtlmh;
+        private Sunny.UI.UIAnalogMeter uiAnalogMeter1;
+        private Sunny.UI.UITextBox txtgb;
+        private Sunny.UI.UITextBox txttensp;
+        private Sunny.UI.UITextBox txt_masp;
+        private Sunny.UI.UILabel uiLabel21;
+        private System.Windows.Forms.NumericUpDown txtsl;
+        private Sunny.UI.UILabel uiLabel15;
+        private Sunny.UI.UILabel uiLabel16;
+        private Sunny.UI.UILabel uiLabel20;
+        private Sunny.UI.UILabel uiLabel18;
+        private Sunny.UI.UILabel uiLabel19;
         private Sunny.UI.UIImageButton uiImageButton9;
         private System.Windows.Forms.TabPage tabhoadon;
         private System.Windows.Forms.Panel panel4;
+        private Sunny.UI.UIPanel uiPanel4;
+        private Sunny.UI.UIButton btnThem;
+        private Sunny.UI.UIButton btnsua;
+        private Sunny.UI.UIButton btnXoa;
         private Sunny.UI.UITextBox uiTextBox11;
         private Sunny.UI.UILabel uiLabel14;
         private Sunny.UI.UIDataGridView uiDataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soDienThoaiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diemDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoaDonsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phieuXuatHangsDataGridViewTextBoxColumn;
         private Sunny.UI.UIPanel uiPanel5;
         private Sunny.UI.UIDataGridView uiDataGridView4;
         private Sunny.UI.UIPanel uiPanel7;
@@ -2234,6 +2252,13 @@
         private Sunny.UI.UIImageButton btntimsp;
         private Sunny.UI.UITextBox txttimtheosp;
         private Sunny.UI.UIDataGridView dgvHoaDon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maHHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maHDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soLuongDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donGiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mAChiTietHDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoaDonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hangHoaDataGridViewTextBoxColumn;
         private Sunny.UI.UIPanel uiPanel6;
         private Sunny.UI.UIDataGridView uiDataGridView5;
         private Sunny.UI.UIPanel uiPanel8;
@@ -2265,24 +2290,6 @@
         private Sunny.UI.UIButton uiButton1;
         private System.Windows.Forms.TabPage tabreport;
         private System.Windows.Forms.TabPage tabmanager;
-        private System.Windows.Forms.Panel panel2;
-        private Sunny.UI.UIDatePicker txtncn;
-        private Sunny.UI.UIComboBox txtlmh;
-        private Sunny.UI.UIAnalogMeter uiAnalogMeter1;
-        private Sunny.UI.UITextBox txtgb;
-        private Sunny.UI.UITextBox txttensp;
-        private Sunny.UI.UITextBox txt_masp;
-        private Sunny.UI.UILabel uiLabel21;
-        private System.Windows.Forms.NumericUpDown txtsl;
-        private Sunny.UI.UILabel uiLabel15;
-        private Sunny.UI.UILabel uiLabel16;
-        private Sunny.UI.UILabel uiLabel20;
-        private Sunny.UI.UILabel uiLabel18;
-        private Sunny.UI.UILabel uiLabel19;
-        private Sunny.UI.UIPanel uiPanel4;
-        private Sunny.UI.UIButton btnThem;
-        private Sunny.UI.UIButton btnsua;
-        private Sunny.UI.UIButton btnXoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn maHangDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenHangDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiHangDataGridViewTextBoxColumn;
@@ -2290,23 +2297,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn giaBanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiMatHangDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaycapnhapDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn chiTietHoaDonsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource hangHoaBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maKHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenKHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soDienThoaiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diemDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hoaDonsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phieuXuatHangsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource khachHangBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maHHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maHDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soLuongDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn donGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mAChiTietHDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hoaDonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hangHoaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource chiTietHoaDonBindingSource;
     }
 }

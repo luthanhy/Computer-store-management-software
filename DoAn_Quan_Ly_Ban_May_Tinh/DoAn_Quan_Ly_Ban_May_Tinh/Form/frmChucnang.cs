@@ -15,16 +15,6 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 {
     public partial class frmChucnang : Form
     {
-        public frmChucnang()
-        {
-            InitializeComponent();
-        }
-
-
-        private void tabProduct_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -42,18 +32,9 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         }
 
 
-        private void uiLabel4_Click(object sender, EventArgs e)
-        {
-
-        }
-
+      
 
         private void uiLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiImageButton4_Click(object sender, EventArgs e)
         {
 
         }
@@ -62,204 +43,66 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         private void uiLabel2_Click(object sender, EventArgs e)
         {
 
-        }
-
-       
+        }  
         private void uiLabel1_Click(object sender, EventArgs e)
         {
 
         }
-
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void uiTabControlMenu1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiTextBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiLabel14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiDatetimePicker1_ValueChanged(object sender, DateTime value)
-        {
-
-        }
-
-        private void uiLabel13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiTextBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiLabel12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiTextBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiLabel11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiTextBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiLabel10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiTextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiLabel9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiLabel8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiLabel7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void uiButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiButton4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uiDataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void uiGroupBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void uiButton1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private Script.FormatData formatdata = new FormatData();
         private List<HangHoa> HangHoaList = new List<HangHoa>();
         private List<KhachHang> khachhanglist = new List<KhachHang>();
         private List<ChiTietHoaDon> chitiethoadonlist = new List<ChiTietHoaDon>();
+        private List<Image> images = new List<Image>();
+        public frmChucnang()
+        {
+            InitializeComponent();
+            AddImage();
+            Load_Image();
+        }
+        private void AddImage()
+        {
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._1);
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._2);
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._3);
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._4);
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._5);
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._6);
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._7);
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._8);
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._9);
+            images.Add(DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._10);
+        }
         #region code
-        private void frmChucnang_Load(object sender, EventArgs e)
+        private void frmChucnang_Load_2(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
             groupBox1.Visible = true;
-            if(menu.Visible == true)
+            if (menu.Visible == true)
             {
+                bntthemsp.Visible = false;
                 formatdata.AddComboBoxLMH(txtlmh);
                 formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
                 formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
                 formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
             }
             menu.Visible = false;
-        }
 
+        }
+        private void Load_Image()
+        {
+            foreach (var image in images)
+            {
+                LoadImage(image);
+            }
+        }
+        private void LoadImage(Image image)
+        {
+            Button button = new Button();
+            button.Text = "";
+            button.Size = new System.Drawing.Size(340, 340);
+            button.Image = image;
+            flowLayoutPanel1.Controls.Add(button);
+        }
         private void uiDataGridView2_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             var index = uiDataGridView2.CurrentCell.RowIndex;
@@ -274,7 +117,6 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 txtncn.Text = selectrow.Cells[6].Value.ToString();
             }
         }
-       
         public void AddSaveFix(bool IsFix, bool IsAdd)
         {
             try
@@ -282,7 +124,16 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 DBContext dBContext = new DBContext();
                 if (IsFix == true)
                 {
-
+                    HangHoa edithanghoa = dBContext.HangHoas.Find(txt_masp.Text);
+                    if( edithanghoa == null ) {
+                        MessageBox.Show("Hang Hoa Da Ton Tai");
+                    }
+                    else
+                    {
+                        edithanghoa.MaHang = txt_masp.Text;
+                        edithanghoa.TenHang = txttensp.Text;
+                        //edithanghoa.LoaiHang = txt
+                    }
                 }
                 else
                 {
@@ -349,32 +200,12 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             Button button = new Button();
             button.Text = "Button";
             button.Size = new System.Drawing.Size(300, 236);
-            // Đặt hình ảnh cho Button từ tệp ảnh
-            button.Image = Image.FromFile(@"D:\QLDA\DoAn_Quan_Ly_Ban_May_Tinh\DoAn_Quan_Ly_Ban_May_Tinh\Resources\mac.png");
+            // Đặt hình ảnh cho Button từ tệp 
+            button.Image = DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources._1;
             flowLayoutPanel1.Controls.Add(button);
         }
-  
+        
         #endregion
-        private void uiPanel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void uiLabel4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void src_home_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnhelp_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -391,16 +222,6 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             frmtg.WindowState = FormWindowState.Maximized;
             frmtg.ShowDialog();
             this.Show();
-        }
-
-        private void uiDataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgvHoaDon_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
