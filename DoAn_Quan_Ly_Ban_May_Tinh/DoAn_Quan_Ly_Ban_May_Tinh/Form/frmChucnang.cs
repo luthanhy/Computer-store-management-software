@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -54,6 +55,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         private List<ChiTietHoaDon> chitiethoadonlist = new List<ChiTietHoaDon>();
         private List<Image> images = new List<Image>();
         private bool IsFix;
+        
         public frmChucnang()
         {
             InitializeComponent();
@@ -86,6 +88,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
                 formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
                 formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
+
             }
             menu.Visible = false;
 
@@ -198,6 +201,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 MessageBox.Show(ex.Message);
             }
         }
+
         private void uiButton4_Click(object sender, EventArgs e)
         {
 
@@ -359,26 +363,187 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
+        //public void xoatextbox()
+        //{
+        //    txtSanPham.Text = string.Empty;
+        //    txtTenSanPham.Text= string.Empty;
+        //    uiTextBox11.Text = string.Empty;
+        //    txtGiaBan.Text = string.Empty;
+        //    uiTextBox5.Text = string.Empty;
+        //}
+      
+        //int index;
+ 
+        //private void uiDataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    index = e.RowIndex;
+        //    if (index >= 0)
+        //    {
+        //        txtSanPham.Text = uiDataGridView1.Rows[index].Cells[0].Value.ToString();
+        //        txtTenSanPham.Text = uiDataGridView1.Rows[index].Cells[1].Value.ToString();
+        //        uiTextBox11.Text = uiDataGridView1.Rows[index].Cells[2].Value.ToString();
+        //        txtGiaBan.Text = uiDataGridView1.Rows[index].Cells[3].Value.ToString();
+        //        uiTextBox5.Text = uiDataGridView1.Rows[index].Cells[4].Value.ToString();
+        //    }
+        //}
+        
+        //private void dgvHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    index = e.RowIndex;
+        //    if (index >= 0)
+        //    {
+        //        txtMaID.Text = dgvHoaDon.Rows[index].Cells[0].Value.ToString();
+        //        txtIDKH.Text = dgvHoaDon.Rows[index].Cells[1].Value.ToString();
+        //        txtTenKH.Text = dgvHoaDon.Rows[index].Cells[2].Value.ToString();
+        //        uiTextBox7.Text = dgvHoaDon.Rows[index].Cells[3].Value.ToString();
+        //        uiTextBox6.Text = dgvHoaDon.Rows[index].Cells[4].Value.ToString();
+
+        //    }
+        //}
+        //public void xoatextbox1()
+        //{
+        //    txtMaID.Text = string.Empty;
+        //    txtIDKH.Text    = string.Empty;
+        //    txtTenKH.Text= string.Empty;    
+        //    uiTextBox7.Text= string.Empty;  
+        //    uiTextBox6.Text= string.Empty;  
+        //}
+        //private void btnThem_Click(object sender, EventArgs e)
+        //{
+        //    DBContext dBContext = new DBContext();
+        //    KhachHang AddKH = dBContext.KhachHangs.Find(txtSanPham.Text);
+            
+
+        //        if (AddKH != null)
+        //        {
+        //            MessageBox.Show("Mã khách hàng đã tồn tại. Không thể thêm!");
+
+        //        }
+        //        else
+        //        {
+        //            KhachHang item = new KhachHang();
+        //            item.MaKH = txtSanPham.Text;
+        //            item.TenKH = txtTenSanPham.Text;
+        //            item.DiaChi = uiTextBox11.Text;
+        //            item.SoDienThoai = int.Parse(txtGiaBan.Text);
+        //            item.Diem = int.Parse(uiTextBox5.Text);
+        //            dBContext.KhachHangs.Add(item);
+        //            dBContext.SaveChanges();
+        //            MessageBox.Show("Thêm thành công!");
+        //            formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
+        //            xoatextbox();
+        //        }
+            
+        //    }
+
+        //private void btnsua_Click(object sender, EventArgs e)
+        //{
+        //    DBContext dBContext = new DBContext();
+        //    try
+        //    {
+
+        //        KhachHang edit = dBContext.KhachHangs.Find(txtSanPham.Text);
+        //        if (index >= 0)
+        //        {
+        //            if (edit == null)
+        //            {
+        //                MessageBox.Show("Mã hàng hóa không thể sửa");
+
+        //            }
+        //            else
+        //            {
+        //                edit.TenKH = txtTenSanPham.Text;
+        //                edit.MaKH = txtSanPham.Text;
+        //                edit.DiaChi = uiTextBox11.Text;
+        //                edit.SoDienThoai = int.Parse(txtGiaBan.Text);
+        //                edit.Diem = int.Parse(uiTextBox5.Text);
+        //                dBContext.Entry<KhachHang>(edit).State = System.Data.Entity.EntityState.Modified;
+        //                dBContext.SaveChanges();
+        //                MessageBox.Show("Sửa Thành Công ");
+        //                formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
+        //                xoatextbox();
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //}
+
+        //private void btnXoa_Click(object sender, EventArgs e)
+        //{
+        //    DBContext dBContext = new DBContext();
+        //    KhachHang deleted = dBContext.KhachHangs.Find(txtSanPham.Text);
+        //    if (index >= 0)
+        //    {
+        //        if (MessageBox.Show("Bạn có chắc chắn muốn xóa không? ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+        //        {
+        //            dBContext.KhachHangs.Remove(deleted);
+        //            dBContext.SaveChanges();
+        //            MessageBox.Show("Xóa thành công");
+        //            formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
+        //            xoatextbox();
+        //        }
+        //    }
+        //}
+       
+        ////Thêm CHI TIẾT HÓA ĐƠN
+        //private void uiButton6_Click_1(object sender, EventArgs e)
+        //{
+        //    DBContext dBContext = new DBContext();
+        //    ChiTietHoaDon AddHD = dBContext.ChiTietHoaDons.Find(txtMaID.Text);
+        
+
+        //    if (AddHD != null)
+        //    {
+        //        MessageBox.Show("Mã hóa đơn đã tồn tại không thể thêm!");
+
+        //    }
+        //    else
+        //    {
+        //        ChiTietHoaDon item1 = new ChiTietHoaDon();
+        //        item1.MaHH = txtMaID.Text;
+        //        item1.MaHD = txtIDKH.Text;
+        //        item1.SoLuong = int.Parse(txtTenKH.Text);
+        //        item1.DonGia = double.Parse(uiTextBox7.Text);
+        //        item1.MAChiTietHD = uiTextBox6.Text;
+        //        dBContext.ChiTietHoaDons.Add(item1);
+        //        dBContext.SaveChanges();
+        //        MessageBox.Show("Thêm thành công!");
+        //        formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
+        //        xoatextbox1();
+
+        //    }
+        //}
+        ////SỬA CHI TIẾT HÓA ĐƠN
+        //private void uiButton7_Click(object sender, EventArgs e)
+        //{
+        //    DBContext dBContext = new DBContext();
+        //    ChiTietHoaDon edit = dBContext.ChiTietHoaDons.Find(txtMaID.Text);
+
+        //    if (index >= 0)
+        //    {
+        //        if (edit == null)
+        //        {
+        //            MessageBox.Show("Mã hóa đơn không thể sửa");
+        //        }
+        //        else
+        //        {
+        //            edit.MaHH = txtMaID.Text;
+        //            edit.MaHD = txtIDKH.Text;
+        //            edit.SoLuong = int.Parse(txtTenKH.Text);
+        //            edit.DonGia = double.Parse(uiTextBox7.Text);
+        //            edit.MAChiTietHD = uiTextBox6.Text;
+
+        //            dBContext.SaveChanges();
+        //            dBContext.Entry<ChiTietHoaDon>(edit).State = System.Data.Entity.EntityState.Modified;
+        //            MessageBox.Show("Sửa thành công!");
+        //            formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
+        //            xoatextbox1();
+        //        }
+        //    }
+        //}
     }
 }
