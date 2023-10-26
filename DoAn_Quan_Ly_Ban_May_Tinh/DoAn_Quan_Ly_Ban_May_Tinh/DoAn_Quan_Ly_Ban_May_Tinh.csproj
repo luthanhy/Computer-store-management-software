@@ -232,8 +232,6 @@
     <None Include="Resources\laptop1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user.png" />
-    <None Include="Resources\password.png" />
     <None Include="Resources\1.png" />
     <None Include="Resources\2.png" />
     <None Include="Resources\3.png" />
@@ -245,7 +243,6 @@
     <None Include="Resources\9.png" />
     <None Include="Resources\10.png" />
     <None Include="Resources\11.png" />
-    <None Include="Resources\login.png" />
     <Content Include="Resources\mac.png" />
     <None Include="Resources\Resource1.bmp" />
   </ItemGroup>

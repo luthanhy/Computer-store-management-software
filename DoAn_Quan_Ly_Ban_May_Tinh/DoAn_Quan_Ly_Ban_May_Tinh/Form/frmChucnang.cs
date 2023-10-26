@@ -76,16 +76,16 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         private void frmChucnang_Load_2(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            //groupBox1.Visible = true;
-            //if (menu.Visible == true)
-            //{
-            //    bntthemsp.Visible = false;
-            //    formatdata.AddComboBoxLMH(txtlmh);
-            //    formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
-            //    formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
-            //    formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
-            //}
-            //menu.Visible = false;
+            groupBox1.Visible = true;
+            if (menu.Visible == true)
+            {
+                bntthemsp.Visible = false;
+                formatdata.AddComboBoxLMH(txtlmh);
+                formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
+                formatdata.LoadDataGirdView(uiDataGridView1, khachhanglist);
+                formatdata.LoadDataGirdView(dgvHoaDon, chitiethoadonlist);
+            }
+            menu.Visible = false;
 
         }
         private void Load_Image()

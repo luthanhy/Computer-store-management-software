@@ -243,7 +243,7 @@
             uiGroupBox3.MinimumSize = new System.Drawing.Size(1, 1);
             uiGroupBox3.Name = "uiGroupBox3";
             uiGroupBox3.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            uiGroupBox3.Size = new System.Drawing.Size(1530, 522);
+            uiGroupBox3.Size = new System.Drawing.Size(1453, 491);
             uiGroupBox3.TabIndex = 28;
             uiGroupBox3.Text = "Thông Tin Sản Phẩm";
             uiGroupBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -255,11 +255,11 @@
             this.uiPanel1.Controls.Add(this.uiButton2);
             this.uiPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.uiPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiPanel1.Location = new System.Drawing.Point(0, 354);
+            this.uiPanel1.Location = new System.Drawing.Point(0, 323);
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(1530, 168);
+            this.uiPanel1.Size = new System.Drawing.Size(1453, 168);
             this.uiPanel1.TabIndex = 49;
             this.uiPanel1.Text = null;
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -269,7 +269,7 @@
             this.uiButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiButton4.Location = new System.Drawing.Point(547, 80);
+            this.uiButton4.Location = new System.Drawing.Point(508, 80);
             this.uiButton4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton4.Name = "uiButton4";
             this.uiButton4.Size = new System.Drawing.Size(100, 35);
@@ -282,7 +282,7 @@
             this.uiButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiButton3.Location = new System.Drawing.Point(686, 80);
+            this.uiButton3.Location = new System.Drawing.Point(647, 80);
             this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton3.Name = "uiButton3";
             this.uiButton3.Size = new System.Drawing.Size(100, 35);
@@ -295,7 +295,7 @@
             this.uiButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiButton2.Location = new System.Drawing.Point(828, 80);
+            this.uiButton2.Location = new System.Drawing.Point(789, 80);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.Size = new System.Drawing.Size(100, 35);
@@ -362,7 +362,7 @@
             this.uiDataGridView2.RowTemplate.Height = 24;
             this.uiDataGridView2.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             this.uiDataGridView2.SelectedIndex = -1;
-            this.uiDataGridView2.Size = new System.Drawing.Size(1530, 452);
+            this.uiDataGridView2.Size = new System.Drawing.Size(1453, 421);
             this.uiDataGridView2.TabIndex = 27;
             this.uiDataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.uiDataGridView2_CellClick_1);
             // 
@@ -376,7 +376,7 @@
             this.uiPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel3.Name = "uiPanel3";
-            this.uiPanel3.Size = new System.Drawing.Size(1530, 38);
+            this.uiPanel3.Size = new System.Drawing.Size(1453, 38);
             this.uiPanel3.TabIndex = 0;
             this.uiPanel3.Text = null;
             this.uiPanel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -387,7 +387,7 @@
             this.uiTextBox10.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.uiTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiTextBox10.Location = new System.Drawing.Point(970, 5);
+            this.uiTextBox10.Location = new System.Drawing.Point(931, 5);
             this.uiTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox10.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox10.Name = "uiTextBox10";
@@ -404,7 +404,7 @@
             this.uiImageButton10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.uiImageButton10.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.search1;
-            this.uiImageButton10.Location = new System.Drawing.Point(1207, 4);
+            this.uiImageButton10.Location = new System.Drawing.Point(1168, 4);
             this.uiImageButton10.Name = "uiImageButton10";
             this.uiImageButton10.Size = new System.Drawing.Size(45, 30);
             this.uiImageButton10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -420,7 +420,7 @@
             uiGroupBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             uiGroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             uiGroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            uiGroupBox2.Location = new System.Drawing.Point(128, -42);
+            uiGroupBox2.Location = new System.Drawing.Point(89, -55);
             uiGroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             uiGroupBox2.MinimumSize = new System.Drawing.Size(1, 1);
             uiGroupBox2.Name = "uiGroupBox2";
@@ -655,7 +655,7 @@
             uiGroupBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             uiGroupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             uiGroupBox4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            uiGroupBox4.Location = new System.Drawing.Point(128, 275);
+            uiGroupBox4.Location = new System.Drawing.Point(89, 262);
             uiGroupBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             uiGroupBox4.MinimumSize = new System.Drawing.Size(1, 1);
             uiGroupBox4.Name = "uiGroupBox4";
@@ -900,49 +900,45 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1731, 90);
+            this.panel1.Size = new System.Drawing.Size(1654, 117);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnhelp
             // 
-            this.btnhelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnhelp.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnhelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnhelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnhelp.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.Tư_vấnnnnnnnnn;
-            this.btnhelp.Location = new System.Drawing.Point(1689, 0);
+            this.btnhelp.Location = new System.Drawing.Point(1388, 31);
             this.btnhelp.Name = "btnhelp";
-            this.btnhelp.Size = new System.Drawing.Size(42, 40);
+            this.btnhelp.Size = new System.Drawing.Size(39, 35);
             this.btnhelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnhelp.TabIndex = 7;
             this.btnhelp.TabStop = false;
             this.btnhelp.Text = null;
-            this.btnhelp.UseWaitCursor = true;
             this.btnhelp.Click += new System.EventHandler(this.btnhelp_Click);
             // 
             // btnsetting
             // 
-            this.btnsetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnsetting.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnsetting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnsetting.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.Setting1;
-            this.btnsetting.Location = new System.Drawing.Point(1689, 46);
+            this.btnsetting.Location = new System.Drawing.Point(1433, 30);
             this.btnsetting.Name = "btnsetting";
-            this.btnsetting.Size = new System.Drawing.Size(42, 40);
+            this.btnsetting.Size = new System.Drawing.Size(39, 35);
             this.btnsetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnsetting.TabIndex = 6;
             this.btnsetting.TabStop = false;
             this.btnsetting.Text = null;
-            this.btnsetting.UseWaitCursor = true;
             this.btnsetting.Click += new System.EventHandler(this.btnsetting_Click);
             // 
             // uiLabel6
             // 
             this.uiLabel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel6.Location = new System.Drawing.Point(1184, 26);
+            this.uiLabel6.Location = new System.Drawing.Point(1172, 42);
             this.uiLabel6.Name = "uiLabel6";
-            this.uiLabel6.Size = new System.Drawing.Size(116, 33);
+            this.uiLabel6.Size = new System.Drawing.Size(100, 23);
             this.uiLabel6.TabIndex = 3;
             this.uiLabel6.Text = "Home";
             this.uiLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -953,9 +949,9 @@
             // 
             this.uiLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel5.Location = new System.Drawing.Point(980, 25);
+            this.uiLabel5.Location = new System.Drawing.Point(968, 41);
             this.uiLabel5.Name = "uiLabel5";
-            this.uiLabel5.Size = new System.Drawing.Size(116, 33);
+            this.uiLabel5.Size = new System.Drawing.Size(100, 23);
             this.uiLabel5.TabIndex = 3;
             this.uiLabel5.Text = "CT Sales";
             this.uiLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -967,9 +963,9 @@
             this.btnhome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnhome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnhome.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.house;
-            this.btnhome.Location = new System.Drawing.Point(1127, 15);
+            this.btnhome.Location = new System.Drawing.Point(1115, 31);
             this.btnhome.Name = "btnhome";
-            this.btnhome.Size = new System.Drawing.Size(57, 45);
+            this.btnhome.Size = new System.Drawing.Size(41, 35);
             this.btnhome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnhome.TabIndex = 2;
             this.btnhome.TabStop = false;
@@ -982,9 +978,9 @@
             this.btnctsales.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnctsales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnctsales.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.Sales;
-            this.btnctsales.Location = new System.Drawing.Point(933, 14);
+            this.btnctsales.Location = new System.Drawing.Point(921, 30);
             this.btnctsales.Name = "btnctsales";
-            this.btnctsales.Size = new System.Drawing.Size(57, 45);
+            this.btnctsales.Size = new System.Drawing.Size(41, 35);
             this.btnctsales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnctsales.TabIndex = 2;
             this.btnctsales.TabStop = false;
@@ -995,9 +991,9 @@
             // 
             this.uiLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel3.Location = new System.Drawing.Point(793, 26);
+            this.uiLabel3.Location = new System.Drawing.Point(781, 42);
             this.uiLabel3.Name = "uiLabel3";
-            this.uiLabel3.Size = new System.Drawing.Size(116, 33);
+            this.uiLabel3.Size = new System.Drawing.Size(100, 23);
             this.uiLabel3.TabIndex = 5;
             this.uiLabel3.Text = "Report";
             this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1009,9 +1005,9 @@
             this.btnreport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnreport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnreport.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.Report;
-            this.btnreport.Location = new System.Drawing.Point(746, 13);
+            this.btnreport.Location = new System.Drawing.Point(734, 29);
             this.btnreport.Name = "btnreport";
-            this.btnreport.Size = new System.Drawing.Size(57, 45);
+            this.btnreport.Size = new System.Drawing.Size(41, 35);
             this.btnreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnreport.TabIndex = 4;
             this.btnreport.TabStop = false;
@@ -1022,9 +1018,9 @@
             // 
             this.uiLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel2.Location = new System.Drawing.Point(631, 25);
+            this.uiLabel2.Location = new System.Drawing.Point(619, 41);
             this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(116, 33);
+            this.uiLabel2.Size = new System.Drawing.Size(100, 23);
             this.uiLabel2.TabIndex = 3;
             this.uiLabel2.Text = "Payment";
             this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1036,9 +1032,9 @@
             this.btnpayment.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnpayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnpayment.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.wallet;
-            this.btnpayment.Location = new System.Drawing.Point(584, 14);
+            this.btnpayment.Location = new System.Drawing.Point(572, 30);
             this.btnpayment.Name = "btnpayment";
-            this.btnpayment.Size = new System.Drawing.Size(57, 45);
+            this.btnpayment.Size = new System.Drawing.Size(41, 35);
             this.btnpayment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnpayment.TabIndex = 2;
             this.btnpayment.TabStop = false;
@@ -1049,9 +1045,9 @@
             // 
             this.uiLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel1.Location = new System.Drawing.Point(458, 24);
+            this.uiLabel1.Location = new System.Drawing.Point(446, 40);
             this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(116, 33);
+            this.uiLabel1.Size = new System.Drawing.Size(100, 23);
             this.uiLabel1.TabIndex = 1;
             this.uiLabel1.Text = "Product";
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1063,9 +1059,9 @@
             this.btnproduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnproduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnproduct.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.product_design;
-            this.btnproduct.Location = new System.Drawing.Point(411, 14);
+            this.btnproduct.Location = new System.Drawing.Point(399, 30);
             this.btnproduct.Name = "btnproduct";
-            this.btnproduct.Size = new System.Drawing.Size(57, 45);
+            this.btnproduct.Size = new System.Drawing.Size(41, 35);
             this.btnproduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnproduct.TabIndex = 0;
             this.btnproduct.TabStop = false;
@@ -1078,7 +1074,7 @@
             this.bntthemsp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bntthemsp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntthemsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.bntthemsp.Location = new System.Drawing.Point(1558, 14);
+            this.bntthemsp.Location = new System.Drawing.Point(1520, 0);
             this.bntthemsp.MinimumSize = new System.Drawing.Size(1, 1);
             this.bntthemsp.Name = "bntthemsp";
             this.bntthemsp.Size = new System.Drawing.Size(100, 35);
@@ -1194,9 +1190,9 @@
             this.groupBox1.Controls.Add(this.bntthemsp);
             this.groupBox1.Controls.Add(this.flowLayoutPanel1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 90);
+            this.groupBox1.Location = new System.Drawing.Point(0, 117);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1731, 731);
+            this.groupBox1.Size = new System.Drawing.Size(1654, 704);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -1207,7 +1203,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 18);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1725, 710);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1648, 683);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // menu
@@ -1221,11 +1217,11 @@
             this.menu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menu.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.menu.Location = new System.Drawing.Point(0, 90);
+            this.menu.Location = new System.Drawing.Point(0, 117);
             this.menu.Multiline = true;
             this.menu.Name = "menu";
             this.menu.SelectedIndex = 0;
-            this.menu.Size = new System.Drawing.Size(1731, 731);
+            this.menu.Size = new System.Drawing.Size(1654, 704);
             this.menu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.menu.TabIndex = 13;
             // 
@@ -1236,7 +1232,7 @@
             this.tabthemsp.Controls.Add(this.uiImageButton9);
             this.tabthemsp.Location = new System.Drawing.Point(201, 0);
             this.tabthemsp.Name = "tabthemsp";
-            this.tabthemsp.Size = new System.Drawing.Size(1530, 735);
+            this.tabthemsp.Size = new System.Drawing.Size(1453, 704);
             this.tabthemsp.TabIndex = 4;
             this.tabthemsp.Text = "Thêm Sản Phẩm";
             this.tabthemsp.UseVisualStyleBackColor = true;
@@ -1250,7 +1246,7 @@
             this.uiPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel2.Name = "uiPanel2";
-            this.uiPanel2.Size = new System.Drawing.Size(1530, 522);
+            this.uiPanel2.Size = new System.Drawing.Size(1453, 491);
             this.uiPanel2.TabIndex = 55;
             this.uiPanel2.Text = null;
             this.uiPanel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1272,7 +1268,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1530, 213);
+            this.panel2.Size = new System.Drawing.Size(1453, 213);
             this.panel2.TabIndex = 54;
             // 
             // txtncn
@@ -1280,7 +1276,7 @@
             this.txtncn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtncn.FillColor = System.Drawing.Color.White;
             this.txtncn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtncn.Location = new System.Drawing.Point(484, 148);
+            this.txtncn.Location = new System.Drawing.Point(445, 148);
             this.txtncn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtncn.MaxLength = 10;
             this.txtncn.MinimumSize = new System.Drawing.Size(63, 0);
@@ -1304,7 +1300,7 @@
             this.txtlmh.DataSource = null;
             this.txtlmh.FillColor = System.Drawing.Color.White;
             this.txtlmh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtlmh.Location = new System.Drawing.Point(1013, 148);
+            this.txtlmh.Location = new System.Drawing.Point(974, 148);
             this.txtlmh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtlmh.MinimumSize = new System.Drawing.Size(63, 0);
             this.txtlmh.Name = "txtlmh";
@@ -1334,7 +1330,7 @@
             this.txtgb.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txtgb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtgb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtgb.Location = new System.Drawing.Point(1013, 89);
+            this.txtgb.Location = new System.Drawing.Point(974, 89);
             this.txtgb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtgb.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtgb.Name = "txtgb";
@@ -1351,7 +1347,7 @@
             this.txttensp.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txttensp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txttensp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txttensp.Location = new System.Drawing.Point(484, 89);
+            this.txttensp.Location = new System.Drawing.Point(445, 89);
             this.txttensp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txttensp.MinimumSize = new System.Drawing.Size(1, 16);
             this.txttensp.Name = "txttensp";
@@ -1368,7 +1364,7 @@
             this.txt_masp.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txt_masp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_masp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_masp.Location = new System.Drawing.Point(484, 35);
+            this.txt_masp.Location = new System.Drawing.Point(445, 35);
             this.txt_masp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_masp.MinimumSize = new System.Drawing.Size(1, 16);
             this.txt_masp.Name = "txt_masp";
@@ -1383,7 +1379,7 @@
             // 
             this.uiLabel21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel21.Location = new System.Drawing.Point(853, 148);
+            this.uiLabel21.Location = new System.Drawing.Point(814, 148);
             this.uiLabel21.Name = "uiLabel21";
             this.uiLabel21.Size = new System.Drawing.Size(141, 29);
             this.uiLabel21.Style = Sunny.UI.UIStyle.Custom;
@@ -1394,7 +1390,7 @@
             // txtsl
             // 
             this.txtsl.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtsl.Location = new System.Drawing.Point(1013, 35);
+            this.txtsl.Location = new System.Drawing.Point(974, 35);
             this.txtsl.Name = "txtsl";
             this.txtsl.Size = new System.Drawing.Size(233, 30);
             this.txtsl.TabIndex = 75;
@@ -1403,7 +1399,7 @@
             // 
             this.uiLabel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel15.Location = new System.Drawing.Point(853, 35);
+            this.uiLabel15.Location = new System.Drawing.Point(814, 35);
             this.uiLabel15.Name = "uiLabel15";
             this.uiLabel15.Size = new System.Drawing.Size(100, 30);
             this.uiLabel15.Style = Sunny.UI.UIStyle.Custom;
@@ -1415,7 +1411,7 @@
             // 
             this.uiLabel16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel16.Location = new System.Drawing.Point(853, 96);
+            this.uiLabel16.Location = new System.Drawing.Point(814, 96);
             this.uiLabel16.Name = "uiLabel16";
             this.uiLabel16.Size = new System.Drawing.Size(100, 23);
             this.uiLabel16.Style = Sunny.UI.UIStyle.Custom;
@@ -1427,7 +1423,7 @@
             // 
             this.uiLabel20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel20.Location = new System.Drawing.Point(285, 148);
+            this.uiLabel20.Location = new System.Drawing.Point(246, 148);
             this.uiLabel20.Name = "uiLabel20";
             this.uiLabel20.Size = new System.Drawing.Size(158, 29);
             this.uiLabel20.Style = Sunny.UI.UIStyle.Custom;
@@ -1439,7 +1435,7 @@
             // 
             this.uiLabel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel18.Location = new System.Drawing.Point(285, 96);
+            this.uiLabel18.Location = new System.Drawing.Point(246, 96);
             this.uiLabel18.Name = "uiLabel18";
             this.uiLabel18.Size = new System.Drawing.Size(146, 23);
             this.uiLabel18.Style = Sunny.UI.UIStyle.Custom;
@@ -1451,7 +1447,7 @@
             // 
             this.uiLabel19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.uiLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel19.Location = new System.Drawing.Point(285, 42);
+            this.uiLabel19.Location = new System.Drawing.Point(246, 42);
             this.uiLabel19.Name = "uiLabel19";
             this.uiLabel19.Size = new System.Drawing.Size(146, 23);
             this.uiLabel19.Style = Sunny.UI.UIStyle.Custom;
@@ -1465,7 +1461,7 @@
             this.uiImageButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.uiImageButton9.Image = global::DoAn_Quan_Ly_Ban_May_Tinh.Properties.Resources.search1;
-            this.uiImageButton9.Location = new System.Drawing.Point(1250, 69);
+            this.uiImageButton9.Location = new System.Drawing.Point(1211, 69);
             this.uiImageButton9.Name = "uiImageButton9";
             this.uiImageButton9.Size = new System.Drawing.Size(45, 30);
             this.uiImageButton9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1478,7 +1474,7 @@
             this.tabhoadon.Controls.Add(this.panel4);
             this.tabhoadon.Location = new System.Drawing.Point(201, 0);
             this.tabhoadon.Name = "tabhoadon";
-            this.tabhoadon.Size = new System.Drawing.Size(1530, 731);
+            this.tabhoadon.Size = new System.Drawing.Size(1453, 704);
             this.tabhoadon.TabIndex = 0;
             this.tabhoadon.Text = "Hóa Đơn";
             this.tabhoadon.UseVisualStyleBackColor = true;
@@ -1507,7 +1503,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1530, 731);
+            this.panel4.Size = new System.Drawing.Size(1453, 704);
             this.panel4.TabIndex = 36;
             // 
             // uiPanel4
@@ -1517,11 +1513,11 @@
             this.uiPanel4.Controls.Add(this.btnXoa);
             this.uiPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.uiPanel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiPanel4.Location = new System.Drawing.Point(0, 603);
+            this.uiPanel4.Location = new System.Drawing.Point(0, 548);
             this.uiPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel4.Name = "uiPanel4";
-            this.uiPanel4.Size = new System.Drawing.Size(1530, 128);
+            this.uiPanel4.Size = new System.Drawing.Size(1453, 156);
             this.uiPanel4.TabIndex = 51;
             this.uiPanel4.Text = null;
             this.uiPanel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1531,7 +1527,7 @@
             this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnThem.Location = new System.Drawing.Point(571, 23);
+            this.btnThem.Location = new System.Drawing.Point(532, 23);
             this.btnThem.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(100, 35);
@@ -1544,7 +1540,7 @@
             this.btnsua.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnsua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnsua.Location = new System.Drawing.Point(710, 23);
+            this.btnsua.Location = new System.Drawing.Point(671, 23);
             this.btnsua.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(100, 35);
@@ -1557,7 +1553,7 @@
             this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnXoa.Location = new System.Drawing.Point(852, 23);
+            this.btnXoa.Location = new System.Drawing.Point(813, 23);
             this.btnXoa.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 35);
@@ -1571,7 +1567,7 @@
             this.uiTextBox11.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.uiTextBox11.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.uiTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiTextBox11.Location = new System.Drawing.Point(849, 230);
+            this.uiTextBox11.Location = new System.Drawing.Point(810, 217);
             this.uiTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox11.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox11.Name = "uiTextBox11";
@@ -1587,7 +1583,7 @@
             // 
             this.uiLabel14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel14.Location = new System.Drawing.Point(680, 236);
+            this.uiLabel14.Location = new System.Drawing.Point(641, 223);
             this.uiLabel14.Name = "uiLabel14";
             this.uiLabel14.Size = new System.Drawing.Size(162, 23);
             this.uiLabel14.TabIndex = 49;
@@ -1601,7 +1597,7 @@
             this.txtTenKH.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txtTenKH.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTenKH.Location = new System.Drawing.Point(739, 527);
+            this.txtTenKH.Location = new System.Drawing.Point(700, 514);
             this.txtTenKH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenKH.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtTenKH.Name = "txtTenKH";
@@ -1617,7 +1613,7 @@
             this.txtNgayBan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNgayBan.FillColor = System.Drawing.Color.White;
             this.txtNgayBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtNgayBan.Location = new System.Drawing.Point(739, 580);
+            this.txtNgayBan.Location = new System.Drawing.Point(700, 567);
             this.txtNgayBan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNgayBan.MaxLength = 19;
             this.txtNgayBan.MinimumSize = new System.Drawing.Size(63, 0);
@@ -1636,7 +1632,7 @@
             // 
             this.uiLabel13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel13.Location = new System.Drawing.Point(633, 580);
+            this.uiLabel13.Location = new System.Drawing.Point(594, 567);
             this.uiLabel13.Name = "uiLabel13";
             this.uiLabel13.Size = new System.Drawing.Size(100, 29);
             this.uiLabel13.TabIndex = 45;
@@ -1649,7 +1645,7 @@
             this.txtGiaBan.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txtGiaBan.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.txtGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGiaBan.Location = new System.Drawing.Point(849, 183);
+            this.txtGiaBan.Location = new System.Drawing.Point(810, 170);
             this.txtGiaBan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtGiaBan.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtGiaBan.Name = "txtGiaBan";
@@ -1665,7 +1661,7 @@
             // 
             this.uiLabel12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel12.Location = new System.Drawing.Point(680, 189);
+            this.uiLabel12.Location = new System.Drawing.Point(641, 176);
             this.uiLabel12.Name = "uiLabel12";
             this.uiLabel12.Size = new System.Drawing.Size(162, 23);
             this.uiLabel12.TabIndex = 43;
@@ -1679,7 +1675,7 @@
             this.txtTenSanPham.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txtTenSanPham.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTenSanPham.Location = new System.Drawing.Point(397, 229);
+            this.txtTenSanPham.Location = new System.Drawing.Point(358, 216);
             this.txtTenSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenSanPham.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtTenSanPham.Name = "txtTenSanPham";
@@ -1694,7 +1690,7 @@
             // 
             this.uiLabel11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel11.Location = new System.Drawing.Point(220, 189);
+            this.uiLabel11.Location = new System.Drawing.Point(181, 176);
             this.uiLabel11.Name = "uiLabel11";
             this.uiLabel11.Size = new System.Drawing.Size(159, 23);
             this.uiLabel11.TabIndex = 41;
@@ -1707,7 +1703,7 @@
             this.txtSanPham.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txtSanPham.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtSanPham.Location = new System.Drawing.Point(397, 182);
+            this.txtSanPham.Location = new System.Drawing.Point(358, 169);
             this.txtSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSanPham.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtSanPham.Name = "txtSanPham";
@@ -1722,7 +1718,7 @@
             // 
             this.uiLabel10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel10.Location = new System.Drawing.Point(218, 236);
+            this.uiLabel10.Location = new System.Drawing.Point(179, 223);
             this.uiLabel10.Name = "uiLabel10";
             this.uiLabel10.Size = new System.Drawing.Size(165, 23);
             this.uiLabel10.TabIndex = 39;
@@ -1733,7 +1729,7 @@
             // 
             this.uiLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel9.Location = new System.Drawing.Point(221, 523);
+            this.uiLabel9.Location = new System.Drawing.Point(182, 510);
             this.uiLabel9.Name = "uiLabel9";
             this.uiLabel9.Size = new System.Drawing.Size(158, 39);
             this.uiLabel9.TabIndex = 37;
@@ -1746,7 +1742,7 @@
             this.txtIDKH.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txtIDKH.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIDKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtIDKH.Location = new System.Drawing.Point(386, 580);
+            this.txtIDKH.Location = new System.Drawing.Point(347, 567);
             this.txtIDKH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtIDKH.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtIDKH.Name = "txtIDKH";
@@ -1761,7 +1757,7 @@
             // 
             this.uiLabel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel8.Location = new System.Drawing.Point(221, 580);
+            this.uiLabel8.Location = new System.Drawing.Point(182, 567);
             this.uiLabel8.Name = "uiLabel8";
             this.uiLabel8.Size = new System.Drawing.Size(149, 29);
             this.uiLabel8.TabIndex = 35;
@@ -1774,7 +1770,7 @@
             this.txtMaID.ButtonSymbolOffset = new System.Drawing.Point(0, 0);
             this.txtMaID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtMaID.Location = new System.Drawing.Point(386, 527);
+            this.txtMaID.Location = new System.Drawing.Point(347, 514);
             this.txtMaID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaID.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtMaID.Name = "txtMaID";
@@ -1789,7 +1785,7 @@
             // 
             this.uiLabel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uiLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.uiLabel7.Location = new System.Drawing.Point(633, 528);
+            this.uiLabel7.Location = new System.Drawing.Point(594, 515);
             this.uiLabel7.Name = "uiLabel7";
             this.uiLabel7.Size = new System.Drawing.Size(100, 29);
             this.uiLabel7.TabIndex = 33;
@@ -1802,7 +1798,7 @@
             this.tabtracuu.Controls.Add(this.panel5);
             this.tabtracuu.Location = new System.Drawing.Point(201, 0);
             this.tabtracuu.Name = "tabtracuu";
-            this.tabtracuu.Size = new System.Drawing.Size(1530, 735);
+            this.tabtracuu.Size = new System.Drawing.Size(1453, 704);
             this.tabtracuu.TabIndex = 1;
             this.tabtracuu.Text = "Tra Cứu Hóa Đơn";
             this.tabtracuu.UseVisualStyleBackColor = true;
@@ -1851,7 +1847,7 @@
             this.uiDataGridView3.RowTemplate.Height = 24;
             this.uiDataGridView3.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             this.uiDataGridView3.SelectedIndex = -1;
-            this.uiDataGridView3.Size = new System.Drawing.Size(1530, 635);
+            this.uiDataGridView3.Size = new System.Drawing.Size(1453, 604);
             this.uiDataGridView3.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.uiDataGridView3.Style = Sunny.UI.UIStyle.Custom;
             this.uiDataGridView3.TabIndex = 3;
@@ -1867,7 +1863,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1530, 100);
+            this.panel5.Size = new System.Drawing.Size(1453, 100);
             this.panel5.TabIndex = 4;
             // 
             // uiDatetimePicker3
@@ -1946,7 +1942,7 @@
             // 
             this.tabreport.Location = new System.Drawing.Point(201, 0);
             this.tabreport.Name = "tabreport";
-            this.tabreport.Size = new System.Drawing.Size(1530, 735);
+            this.tabreport.Size = new System.Drawing.Size(1453, 704);
             this.tabreport.TabIndex = 2;
             this.tabreport.Text = "Báo Cáo Thống Kê";
             this.tabreport.UseVisualStyleBackColor = true;
@@ -1955,7 +1951,7 @@
             // 
             this.tabmanager.Location = new System.Drawing.Point(201, 0);
             this.tabmanager.Name = "tabmanager";
-            this.tabmanager.Size = new System.Drawing.Size(1530, 735);
+            this.tabmanager.Size = new System.Drawing.Size(1453, 704);
             this.tabmanager.TabIndex = 3;
             this.tabmanager.Text = "Quản Lý Sales";
             this.tabmanager.UseVisualStyleBackColor = true;
@@ -2124,7 +2120,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(1731, 821);
+            this.ClientSize = new System.Drawing.Size(1654, 821);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
