@@ -28,7 +28,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             CenterToScreen();
             txtmatkhau.PasswordChar = '*';
-            frm.Reset()
+            frm.Reset();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

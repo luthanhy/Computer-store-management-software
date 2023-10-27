@@ -74,7 +74,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             bool issignin = checktextbox();
             if(issignin==true)
             {
-                MessageBox.Show("Login Sucess");
+                MessageBox.Show("Đăng ký thành công");
                 this.Hide();
                 
             }
