@@ -97,6 +97,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                     }
                 }
                 else {
+                    //y
                     MessageBox.Show("Sai tên người dùng hoặc mật khẩu. Vui lòng thử lại.");
                     xoatextbox();
                     txttaikhoan.Focus();
