@@ -19,7 +19,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh.Script
         {
             List<T> result = new List<T>();
             DBContext dBContext = new DBContext();
-
+            DbContextSignup db = new DbContextSignup();
             if (typeof(T) == typeof(HangHoa))
             {
                 result.AddRange(dBContext.HangHoas.Cast<T>());
@@ -39,6 +39,9 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh.Script
             else if (typeof(T) == typeof(PhieuXuatHang))
             {
                 result.AddRange(dBContext.PhieuXuatHangs.Cast<T>());
+            }else if(typeof(T) == typeof(AcountSignUp))
+            {
+                result.AddRange(db.AcountSignUps.Cast<T>());
             }
             return result;
         }

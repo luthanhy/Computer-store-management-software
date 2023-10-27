@@ -440,9 +440,9 @@
             </ChartNoDataMessage>
             <DataSetName>PhieuHoaDon</DataSetName>
             <Top>1.08833in</Top>
-            <Left>6.155in</Left>
-            <Height>4.08333in</Height>
-            <Width>4.69167in</Width>
+            <Left>7.07167in</Left>
+            <Height>5.74166in</Height>
+            <Width>5.51666in</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -668,7 +668,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -862,10 +861,10 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>5.39167in</Height>
+        <Height>7.6in</Height>
         <Style />
       </Body>
-      <Width>11.08833in</Width>
+      <Width>15.69666in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

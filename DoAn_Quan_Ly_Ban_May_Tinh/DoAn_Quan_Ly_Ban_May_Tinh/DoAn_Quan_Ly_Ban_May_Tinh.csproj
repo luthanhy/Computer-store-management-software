@@ -105,6 +105,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\AcountSignUp.cs" />
+    <Compile Include="Model\DbContextSignup.cs" />
     <Compile Include="Model\ChiTietHoaDon.cs" />
     <Compile Include="Model\DBContext.cs" />
     <Compile Include="Form\frmChucnang.cs">

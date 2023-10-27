@@ -12,6 +12,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 {
     public partial class frm_dangnhap : Form
     {
+        private Script.FormatData formatData = new Script.FormatData();
         public frm_dangnhap()
         {
          
@@ -81,23 +82,26 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             {
                 string username = txttaikhoan.Text;
                 string password = txtmatkhau.Text;
-                if (username == "" && password == "")
+
+                var finduseraccount = formatData.GetDataFormDB<AcountSignUp>().Where(s=>s.Iduser == username).ToList();
+                if(finduseraccount==null)
                 {
-                    
+                    var findpassword = formatData.GetDataFormDB<AcountSignUp>().Where(s => s.password_signup == password).ToList();
+                    if(findpassword!=null)
+                    {
                         MessageBox.Show("Đăng nhập thành công!!");
                         frmChucnang frmchucnang = new frmChucnang();
                         this.Hide();
                         frmchucnang.ShowDialog();
                         this.Show();
-                    
+                    }
                 }
-                else
-                {
+                else {
                     MessageBox.Show("Sai tên người dùng hoặc mật khẩu. Vui lòng thử lại.");
                     xoatextbox();
                     txttaikhoan.Focus();
-                }
 
+                }
             }
             catch (Exception ex)
             {

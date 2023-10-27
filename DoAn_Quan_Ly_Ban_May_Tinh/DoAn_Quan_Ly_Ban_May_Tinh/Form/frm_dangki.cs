@@ -68,13 +68,38 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             this.Hide();
 
         }
-
+        private void Signup()
+        {
+            try
+            {
+                DbContextSignup db = new DbContextSignup();
+                var checkaccount = db.AcountSignUps.Find(txttaikhoan.Text);
+                if (checkaccount != null)
+                {
+                    MessageBox.Show("Tài Khoảng Đã Được Tạo");
+                }
+                else
+                {
+                    AcountSignUp acount = new AcountSignUp();
+                    acount.username_signup = txttennguoidung.Text;
+                    acount.Iduser = txttaikhoan.Text;
+                    acount.password_signup = txtmatkhau.Text;
+                    db.AcountSignUps.Add(acount);
+                    db.SaveChanges();
+                    MessageBox.Show("Đăng Kí Thành Công");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void btndangki_Click(object sender, EventArgs e)
         {
             bool issignin = checktextbox();
             if(issignin==true)
             {
-                MessageBox.Show("Login Sucess");
+                Signup();
                 this.Hide();
                 
             }
