@@ -23,6 +23,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         private List<HangHoa> HangHoaList = new List<HangHoa>();
         private List<KhachHang> khachhanglist = new List<KhachHang>();
         private List<ChiTietHoaDon> chitiethoadonlist = new List<ChiTietHoaDon>();
+        private List<HoaDon> hoadon = new List<HoaDon>();
         private List<PhieuXuatHang> phieuXuatHangs = new List<PhieuXuatHang> ();
         private List<Image> images = new List<Image>();
         private bool IsFix;
@@ -49,6 +50,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
                 formatdata.LoadDataGirdView(dgv_ttkh, khachhanglist);
                 formatdata.LoadDataGirdView(dgvpxhd, phieuXuatHangs);
+                formatdata.LoadDataGirdView(dgv_tracuuhoadon, hoadon);
             }
             menu.Visible = false;
             
@@ -652,6 +654,11 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         }
 
         private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bnt_tracuu_Click(object sender, EventArgs e)
         {
 
         }

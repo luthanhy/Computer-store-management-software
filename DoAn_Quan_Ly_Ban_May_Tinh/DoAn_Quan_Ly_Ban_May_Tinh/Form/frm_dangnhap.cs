@@ -82,18 +82,18 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             {
                 string username = txttaikhoan.Text;
                 string password = txtmatkhau.Text;
-
+                MessageBox.Show("Đăng nhập thành công!!");
+                frmChucnang frmchucnang = new frmChucnang();
+                this.Hide();
+                frmchucnang.ShowDialog();
+                this.Show();
                 var finduseraccount = formatData.GetDataFormDB<AcountSignUp>().Where(s=>s.Iduser == username).ToList();
                 if(finduseraccount==null)
                 {
                     var findpassword = formatData.GetDataFormDB<AcountSignUp>().Where(s => s.password_signup == password).ToList();
                     if(findpassword!=null)
                     {
-                        MessageBox.Show("Đăng nhập thành công!!");
-                        frmChucnang frmchucnang = new frmChucnang();
-                        this.Hide();
-                        frmchucnang.ShowDialog();
-                        this.Show();
+                      
                     }
                 }
                 else {
