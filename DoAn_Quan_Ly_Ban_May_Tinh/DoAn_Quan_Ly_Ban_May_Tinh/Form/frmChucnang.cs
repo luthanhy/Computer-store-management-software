@@ -662,5 +662,15 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
 
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void grp_quanlyhoadon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
