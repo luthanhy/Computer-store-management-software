@@ -32,7 +32,6 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             this.Hide();
             frm_Dangnhap.ShowDialog();
             this.Show();
-            
             form1.xoatextbox();
             
            
@@ -41,6 +40,14 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         private void btnthoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnsignup_Click(object sender, EventArgs e)
+        {
+            frm_dangki frm_Dangki = new frm_dangki();
+            this.Hide();
+            frm_Dangki.ShowDialog();
+            this.Show();
         }
     }
 }

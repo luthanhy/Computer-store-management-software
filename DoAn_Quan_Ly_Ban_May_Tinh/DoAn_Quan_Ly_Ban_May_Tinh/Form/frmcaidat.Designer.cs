@@ -30,6 +30,7 @@
         {
             this.btndangxuat = new Sunny.UI.UIButton();
             this.btnthoat = new Sunny.UI.UIButton();
+            this.btnsignup = new Sunny.UI.UIButton();
             this.SuspendLayout();
             // 
             // btndangxuat
@@ -66,11 +67,37 @@
             this.btnthoat.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
+            // btnsignup
+            // 
+            this.btnsignup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnsignup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsignup.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnsignup.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.btnsignup.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.btnsignup.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.btnsignup.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.btnsignup.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsignup.ForeColor = System.Drawing.Color.Black;
+            this.btnsignup.Location = new System.Drawing.Point(576, 166);
+            this.btnsignup.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnsignup.Name = "btnsignup";
+            this.btnsignup.RectColor = System.Drawing.Color.Black;
+            this.btnsignup.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.btnsignup.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.btnsignup.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.btnsignup.Size = new System.Drawing.Size(133, 35);
+            this.btnsignup.Style = Sunny.UI.UIStyle.Custom;
+            this.btnsignup.TabIndex = 11;
+            this.btnsignup.Text = "Đăng Ký";
+            this.btnsignup.TipsFont = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsignup.Click += new System.EventHandler(this.btnsignup_Click);
+            // 
             // frmcaidat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnsignup);
             this.Controls.Add(this.btnthoat);
             this.Controls.Add(this.btndangxuat);
             this.Name = "frmcaidat";
@@ -83,5 +110,6 @@
 
         private Sunny.UI.UIButton btndangxuat;
         private Sunny.UI.UIButton btnthoat;
+        private Sunny.UI.UIButton btnsignup;
     }
 }

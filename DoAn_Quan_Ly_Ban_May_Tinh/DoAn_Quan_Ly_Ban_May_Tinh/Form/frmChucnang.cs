@@ -39,6 +39,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
        
         private void frmChucnang_Load_2(object sender, EventArgs e)
         {
+            groupBox1.Text = "Gian Hàng";
             ReportProcess();
             this.WindowState = FormWindowState.Maximized;
             LoadButtonStart();
@@ -47,10 +48,9 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             {
                 bntthemsp.Visible = false;
                 formatdata.AddComboBoxLMH(txtlmh);
-                formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
-                formatdata.LoadDataGirdView(dgv_ttkh, khachhanglist);
-                formatdata.LoadDataGirdView(dgvpxhd, phieuXuatHangs);
-                formatdata.LoadDataGirdView(dgv_tracuuhoadon, hoadon);
+                ReloadDataGird();
+
+
             }
             menu.Visible = false;
             
@@ -63,7 +63,15 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             frmtg.ShowDialog();
             this.Show();
         }
+        public void ReloadDataGird()
+        {
 
+            formatdata.LoadDataGirdView(uiDataGridView2, HangHoaList);
+            formatdata.LoadDataGirdView(dgv_ttkh, khachhanglist);
+            formatdata.LoadDataGirdView(dgvpxhd, phieuXuatHangs);
+            formatdata.LoadDataGirdView(dgv_tracuuhoadon, hoadon);
+            formatdata.LoadDataGirdView(dgv_hoadon, chitiethoadonlist);
+        }
         private void btnsetting_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -82,7 +90,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
             ReportDataSource reportDataSource2 = new ReportDataSource("KhachHang", formatdata.GetDataFormDB<KhachHang>());
 
             reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
-            reportViewer1.LocalReport.ReportPath = @"C:\Users\thanh\OneDrive\Máy tính\Doan\DoAn_Quan_Ly_Ban_May_Tinh\DoAn_Quan_Ly_Ban_May_Tinh\frmreport.rdlc";
+            reportViewer1.LocalReport.ReportPath = @"C:\Users\thanh\OneDrive\Máy tính\DoAn2\DoAn_Quan_Ly_Ban_May_Tinh\DoAn_Quan_Ly_Ban_May_Tinh\DoAn_Quan_Ly_Ban_May_Tinh\frmreport.rdlc";
             reportViewer1.LocalReport.DataSources.Add(reportDataSource);
             reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.RefreshReport();
@@ -147,10 +155,10 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 var selectrow = uiDataGridView2.Rows[index];
                 txt_masp.Text = selectrow.Cells[0].Value.ToString();
                 txttensp.Text = selectrow.Cells[1].Value.ToString();
-                txtsl.Value = decimal.Parse(selectrow.Cells[3].Value.ToString());
-                txtgb.Text = selectrow.Cells[4].Value.ToString();
-                txtlmh.Text = selectrow.Cells[5].Value.ToString();
-                txtncn.Text = selectrow.Cells[6].Value.ToString();
+                txtsl.Value = decimal.Parse(selectrow.Cells[2].Value.ToString());
+                txtgb.Text = selectrow.Cells[3].Value.ToString();
+                txtlmh.Text = selectrow.Cells[4].Value.ToString();
+                txtncn.Text = selectrow.Cells[5].Value.ToString();
             }
         }
         private void bntthemsp_Click(object sender, EventArgs e)
@@ -285,15 +293,15 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
 
             menu.Visible = true;
-            menu.SelectTab(4);
+            menu.SelectTab(3);
 
         }
         private void uiImageButton3_Click(object sender, EventArgs e)
         {
 
             menu.Visible = true;
-            menu.SelectTab(3);
-
+            menu.SelectTab(4);
+            
         }
         private void uiImageButton6_Click(object sender, EventArgs e)
         {
@@ -377,9 +385,9 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                         }
                         else
                         {
-                            edit.TenKH = txt_tkh.Text;
-                            edit.MaKH = txtmkh.Text;
-                            edit.DiaChi = txt_dckh.Text;
+                            edit.TenKH = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_tkh.Text));
+                            edit.MaKH = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txtmkh.Text));
+                            edit.DiaChi = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_dckh.Text));
                             edit.SoDienThoai = int.Parse(txt_sdtkh.Text);
                             edit.Diem = int.Parse(txt_dtkh.Text);
                             dBContext.Entry<KhachHang>(edit).State = System.Data.Entity.EntityState.Modified;
@@ -393,9 +401,9 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 else
                 {
 
-                    KhachHang AddKH = dBContext.KhachHangs.Find(txtmkh.Text);
+                    KhachHang AddHD = dBContext.KhachHangs.Find(txtmkh.Text);
 
-                    if (AddKH != null)
+                    if (AddHD != null)
                     {
                         MessageBox.Show("Mã khách hàng đã tồn tại. Không thể thêm!");
 
@@ -403,9 +411,9 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                     else
                     {
                         KhachHang item = new KhachHang();
-                        item.MaKH = txtmkh.Text;
-                        item.TenKH = txt_tkh.Text;
-                        item.DiaChi = txt_dckh.Text;
+                        item.TenKH = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_tkh.Text));
+                        item.MaKH = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txtmkh.Text));
+                        item.DiaChi = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_dckh.Text));
                         item.SoDienThoai = int.Parse(txt_sdtkh.Text);
                         item.Diem = int.Parse(txt_dtkh.Text);
                         dBContext.KhachHangs.Add(item);
@@ -469,9 +477,32 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 MessageBox.Show(ex.Message);
             }
         }
-        #endregion
+
+        private void bnt_searchkh_Click(object sender, EventArgs e)
+        {
+            Search_KH();
+        }        
+        public void Search_KH()
+        {
+            try
+            {
+                string masp_search = txt_searchkh.Text;
+                var listsearch = formatdata.GetDataFormDB<KhachHang>()
+                    .Where(s => s.MaKH.IndexOf(masp_search, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList(); // Materialize the results
+
+                // You can now use 'listsearch' to work with the filtered list of HangHoa items
+                uiDataGridView2.DataSource = null;
+                uiDataGridView2.DataSource = listsearch;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+            #endregion
         #region QLTTHD
-        private void dgvpxhd_CellClick(object sender, DataGridViewCellEventArgs e)
+            private void dgvpxhd_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var index = dgvpxhd.CurrentCell.RowIndex;
             if (index >= 0)
@@ -595,8 +626,174 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             ADDFixSavePhieuHD(IsFix);
         }
+
+        private void bnt_search_ttkh_Click(object sender, EventArgs e)
+        {
+            Search_THD();
+        }
+        public void Search_THD()
+        {
+            try
+            {
+                string masp_search = txt_searchtthd.Text;
+                var listsearch = formatdata.GetDataFormDB<PhieuXuatHang>()
+                    .Where(s => s.MaPX.IndexOf(masp_search, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList(); // Materialize the results
+
+                // You can now use 'listsearch' to work with the filtered list of HangHoa items
+                uiDataGridView2.DataSource = null;
+                uiDataGridView2.DataSource = listsearch;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         #endregion
-        
+        #region HaoDon
+
+        private void dgv_hoadon_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var index = dgv_hoadon.CurrentRow.Index;
+            if (index >= 0)
+            {
+                txt_mhd.Text = dgv_hoadon.Rows[index].Cells[0].Value.ToString();
+                txt_tenhd.Text = dgv_hoadon.Rows[index].Cells[1].Value.ToString();
+                txt_mkh.Text = dgv_hoadon.Rows[index].Cells[2].Value.ToString();
+                txt_ngaylaphd.Text = dgv_hoadon.Rows[index].Cells[3].Value.ToString();  
+                txt_vat.Text = dgv_hoadon.Rows[index].Cells[4].Value.ToString();
+                //txt_thanhtien.Text = dgv_hoadon.Rows[index].Cells[5].Value.ToString();
+            }
+        }
+        private void AddFixSavw_HD(bool IsFix)
+        {
+
+            try
+            {
+                DBContext dBContext = new DBContext();
+                if (IsFix == true)
+                {
+                    HoaDon edit = dBContext.HoaDons.Find(txt_mhd.Text);
+                    if (edit == null)
+                    {
+                        MessageBox.Show("Mã hóa đơn không thể sửa");
+
+                    }
+                    else
+                    {
+                        edit.MaHoaDo = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_mhd.Text));
+                        edit.SoHoaDon = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_tenhd.Text));
+                        edit.MaKH = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_mkh.Text));
+                        edit.NgayLap = DateTime.Parse(txt_ngaylaphd.Text);
+                        edit.VAT = int.Parse(txt_vat.Text);
+                       // edit.ThanhTien = double.Parse(txt_thanhtien.Text);
+                        dBContext.Entry<HoaDon>(edit).State = System.Data.Entity.EntityState.Modified;
+                        dBContext.SaveChanges();
+                        MessageBox.Show("Luu Thành Công ");
+                        formatdata.LoadDataGirdView(dgv_hoadon, hoadon);
+                        xoatextbox();
+                        LoadButtonStart();
+                    }
+                }
+                else
+                {
+
+                    HoaDon AddHD = dBContext.HoaDons.Find(txt_mhd.Text);
+
+                    if (AddHD != null)
+                    {
+                        MessageBox.Show("Mã Hóa Đơn đã tồn tại. Không thể thêm!");
+
+                    }
+                    else
+                    {
+                        HoaDon item = new HoaDon();
+                        item.MaHoaDo = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_mhd.Text));
+                        item.SoHoaDon = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_tenhd.Text));
+                        item.MaKH = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txt_mkh.Text));
+                        item.NgayLap = DateTime.Parse(txt_ngaylaphd.Text);
+                        item.VAT = int.Parse(txt_vat.Text);
+                        //item.ThanhTien = double.Parse(txt_thanhtien.Text);
+                        dBContext.HoaDons.Add(item);
+                        dBContext.SaveChanges();
+                        MessageBox.Show("Thêm thành công!");
+                        formatdata.LoadDataGirdView(dgv_hoadon, hoadon);
+                        LoadButtonStart();
+                    }
+                }
+            } catch (Exception ex) {
+                MessageBox.Show(ex.Message);   
+            }
+            }
+        private void btn_themhoadon_Click(object sender, EventArgs e)
+        {
+            btn_luuhoadon.Enabled = true;
+            bnt_xoaphd.Enabled = false;
+            btn_suahoadon.Enabled = false;
+            btn_themhoadon.Enabled = false;
+            IsFix = false;
+        }
+        private void btn_suahoadon_Click(object sender, EventArgs e)
+        {
+            btn_luuhoadon.Enabled = true;
+            bnt_xoaphd.Enabled = false;
+            btn_suahoadon.Enabled = false;
+            btn_themhoadon.Enabled = false;
+            IsFix = true;
+        }
+
+        private void btn_luuhoadon_Click(object sender, EventArgs e)
+        {
+            AddFixSavw_HD(IsFix);
+        }
+
+        private void btn_xoahoadon_Click(object sender, EventArgs e)
+        {
+            DBContext dBContext = new DBContext();
+            var phieuhd = dBContext.HoaDons.Find(txt_mhd.Text);
+            if (phieuhd != null)
+            {
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    dBContext.HoaDons.Remove(phieuhd);
+                    dBContext.SaveChanges();
+                    formatdata.LoadDataGirdView(dgvpxhd, hoadon);
+                    LoadButtonStart();
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không Tìm Thấy Hóa Đơn");
+            }
+        }
+        public void Search_TTHD()
+        {
+            try
+            {
+                string masp_search = txt_searchhd.Text;
+                var listsearch = formatdata.GetDataFormDB<HoaDon>()
+                    .Where(s => s.MaHoaDo.IndexOf(masp_search, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList(); // Materialize the results
+
+                // You can now use 'listsearch' to work with the filtered list of HangHoa items
+                uiDataGridView2.DataSource = null;
+                uiDataGridView2.DataSource = listsearch;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void bnt_searchhd_Click(object sender, EventArgs e)
+        {
+            Search_TTHD();
+        }
+        #endregion
 
         private void uiGroupBox2_Click(object sender, EventArgs e)
         {
@@ -669,6 +866,74 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         }
 
         private void grp_quanlyhoadon_Click(object sender, EventArgs e)
+        {
+
+        }
+        #region TraCuuHd
+        private void Setup_TimeTraCuu()
+        {
+
+            DateTime timeend = DateTime.Parse(txt_ngayend.Text);
+            DateTime timestart = DateTime.Parse(txt_ngaystart.Text);
+            var filterData = formatdata.GetDataFormDB<HoaDon>().Where(s => s.NgayLap > timestart && s.NgayLap < timeend).ToList();
+            dgv_tracuuhoadon.DataSource = null;
+            dgv_tracuuhoadon.DataSource = filterData;
+            if (filterData == null)
+            {
+                MessageBox.Show("Không Tìm Thấy Hóa Đơn Cần Tìm");
+                formatdata.LoadDataGirdView(dgv_tracuuhoadon, hoadon);
+            }
+        }
+        private void bnt_tracuu_Click_1(object sender, EventArgs e)
+        {
+            Setup_TimeTraCuu();
+        }
+
+        #endregion
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgv_ttkh_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void menu_Click(object sender, EventArgs e)
+        {
+            ReloadDataGird();
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void uiLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiImageButton1_Click_1(object sender, EventArgs e)
+        {
+            menu.Visible = true;
+            menu.SelectTab(2);
+        }
+
+        private void uiLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiLabel27_Click(object sender, EventArgs e)
         {
 
         }

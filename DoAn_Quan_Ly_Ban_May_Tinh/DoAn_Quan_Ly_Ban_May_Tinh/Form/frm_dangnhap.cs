@@ -44,10 +44,7 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
 
         private void btnsignup_Click(object sender, EventArgs e)
         {
-            frm_dangki frm_Dangki = new frm_dangki();
-            this.Hide();
-            frm_Dangki.ShowDialog();
-            this.Show();
+          
         }
 
         private void btnexit_Click(object sender, EventArgs e)
@@ -83,17 +80,17 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
                 string username = txttaikhoan.Text;
                 string password = txtmatkhau.Text;
                 MessageBox.Show("Đăng nhập thành công!!");
-                frmChucnang frmchucnang = new frmChucnang();
-                this.Hide();
-                frmchucnang.ShowDialog();
-                this.Show();
                 var finduseraccount = formatData.GetDataFormDB<AcountSignUp>().Where(s=>s.Iduser == username).ToList();
-                if(finduseraccount==null)
+                if(finduseraccount!=null)
                 {
                     var findpassword = formatData.GetDataFormDB<AcountSignUp>().Where(s => s.password_signup == password).ToList();
                     if(findpassword!=null)
                     {
-                      
+
+                        frmChucnang frmchucnang = new frmChucnang();
+                        this.Hide();
+                        frmchucnang.ShowDialog();
+                        this.Show();
                     }
                 }
                 else {
@@ -124,11 +121,11 @@ namespace DoAn_Quan_Ly_Ban_May_Tinh
         {
             CountClick++;
             if(CountClick%2==0) {
-                uiCheckBox1.Checked = true;
+                uiCheckBox1.Checked = false;
             }
             else
             {
-                uiCheckBox1.Checked = false;
+                uiCheckBox1.Checked = true;
             }
             if(uiCheckBox1.Checked)
             {

@@ -38,7 +38,6 @@
             this.txttaikhoan = new Sunny.UI.UITextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnlogin = new Sunny.UI.UIButton();
-            this.btnsignup = new Sunny.UI.UIButton();
             this.btnexit = new Sunny.UI.UIButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -131,6 +130,7 @@
             this.txtmatkhau.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtmatkhau.Name = "txtmatkhau";
             this.txtmatkhau.Padding = new System.Windows.Forms.Padding(5);
+            this.txtmatkhau.PasswordChar = '*';
             this.txtmatkhau.ShowText = false;
             this.txtmatkhau.Size = new System.Drawing.Size(323, 41);
             this.txtmatkhau.TabIndex = 16;
@@ -159,7 +159,6 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.btnlogin);
-            this.panel3.Controls.Add(this.btnsignup);
             this.panel3.Controls.Add(this.btnexit);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 421);
@@ -174,7 +173,7 @@
             this.btnlogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnlogin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.ForeColor = System.Drawing.Color.Black;
-            this.btnlogin.Location = new System.Drawing.Point(192, 3);
+            this.btnlogin.Location = new System.Drawing.Point(354, 17);
             this.btnlogin.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.RectColor = System.Drawing.Color.Black;
@@ -184,31 +183,6 @@
             this.btnlogin.Text = "Đăng Nhập";
             this.btnlogin.TipsFont = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
-            // 
-            // btnsignup
-            // 
-            this.btnsignup.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnsignup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsignup.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnsignup.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.btnsignup.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.btnsignup.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.btnsignup.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.btnsignup.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsignup.ForeColor = System.Drawing.Color.Black;
-            this.btnsignup.Location = new System.Drawing.Point(382, 3);
-            this.btnsignup.MinimumSize = new System.Drawing.Size(1, 1);
-            this.btnsignup.Name = "btnsignup";
-            this.btnsignup.RectColor = System.Drawing.Color.Black;
-            this.btnsignup.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.btnsignup.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.btnsignup.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.btnsignup.Size = new System.Drawing.Size(133, 35);
-            this.btnsignup.Style = Sunny.UI.UIStyle.Custom;
-            this.btnsignup.TabIndex = 10;
-            this.btnsignup.Text = "Đăng Ký";
-            this.btnsignup.TipsFont = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsignup.Click += new System.EventHandler(this.btnsignup_Click);
             // 
             // btnexit
             // 
@@ -258,7 +232,6 @@
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UITextBox txttaikhoan;
         private System.Windows.Forms.Panel panel3;
-        private Sunny.UI.UIButton btnsignup;
         private Sunny.UI.UIButton btnlogin;
         private Sunny.UI.UIButton btnexit;
         private Sunny.UI.UICheckBox uiCheckBox1;
